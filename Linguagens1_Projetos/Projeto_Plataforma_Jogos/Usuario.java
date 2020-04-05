@@ -6,12 +6,21 @@ public class Usuario {
         this.password = password;
         this.email = email;
     }
-
-    public boolean validarSenha(String senha){
+    
+    public boolean validarSenha(String senha) {
         return senha.equals(password);
     }
 
-    public String getNickname(){
+    public String getNickname() {
         return nickname;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }

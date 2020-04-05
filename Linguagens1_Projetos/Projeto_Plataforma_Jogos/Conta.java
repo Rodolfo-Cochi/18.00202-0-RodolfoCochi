@@ -5,35 +5,37 @@ public class Conta {
     private double creditos;
     private ArrayList<Jogo> jogos;
 
-    public Conta(Usuario user){
+    // Construtor
+    public Conta(Usuario user) {
         this.user = user;
         creditos = 0;
-        jogos = new ArrayList<>();
+        jogos = new ArrayList<>(); // Inicializa a lista
     }
 
-    public void addCreditos(double valor){
+    public void addCreditos(double valor) {
         this.creditos += valor;
     }
 
-    public double getCreditos(){
+    public double getCreditos() {
         return this.creditos;
     }
 
-    public void addJogo(Jogo jogo){
+    public void addJogo(Jogo jogo) {
         jogos.add(jogo);
     }
 
-    public ArrayList<Jogo> getJogos(){
+    public ArrayList<Jogo> getJogos() {
         return jogos;
     }
 
-    public String getInfo(){
+    public String getInfo() {
         String resposta = "";
-        resposta = String.format("{user:%s, credits:%f, jogos:[", user.getNickname(), this.creditos);
+        resposta = String.format("{user: %s, credits: %.2f, jogos:[", user.getNickname(), this.creditos);
         for (Jogo jogo : jogos) {
             resposta += jogo.getInfo() + ",";
         }
         resposta += "]}";
         return resposta;
     }
+
 }
