@@ -23,9 +23,9 @@ public class Main {
         
         //Gerar saldos
         double saldo,saldo2,saldo3;
-        saldo = 10;
-        saldo2 = 100;
-        saldo3 = 1000;
+        saldo = 1000;
+        saldo2 = 250;
+        saldo3 = 3000;
         
     
         //Conta 
@@ -35,6 +35,7 @@ public class Main {
 
 
         //Operacoes
+        conta.depositar(250);
         
         
         

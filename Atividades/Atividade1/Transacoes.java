@@ -13,16 +13,26 @@ public class Transacoes {
         return r.nextInt((max - min) + 1) + min;
     }
 
-    String gerarQr(Conta conta, double valor){
-         String.format("%s;%s;%s;%s", conta.getIdConta(),conta.getUsuario().getNome(),String.valueOf(valor),String.valueOf(getRandomNumberInRange(1000,9999)));
+    String gerarQr(Conta conta, double valor) {
+        String.format("%s;%s;%s;%s", conta.getIdConta(), conta.getUsuario().getNome(), String.valueOf(valor),
+                String.valueOf(getRandomNumberInRange(1000, 9999)));
     }
 
-
-    boolean transferirSaldo(Conta pagante,Conta recebedor, String Qr) {
-        String[]dados = Qr.split(";");
+    boolean transferirSaldo(Conta conta1, Conta conta2, String Qr) {
+        String[] dados = Qr.split(";");
         Double.parseDouble(dados[2]);
-        if (conta.getIdConta().equals(dados[0])){
-            return true;
+        if (conta1.getIdConta().equals(dados[0])) {
+            if (((conta2.getIdConta()).equals(dados[0]))) {
+                if ((conta1.getSaldo()) >= (Double.parseDouble(dados[2]))) {
+                    conta1.sacar(Double.parseDouble(dados[2]));
+                    conta2.depositar(Double.parseDouble(dados[2]));
+                } else {
+                    System.out.println("Saldo de " + conta1.getUsuario().getNome() + " nao deu.");
+                }
+            } else {
+                System.out.println("Nao bateu.");
+            }
+
         }
     }
 
