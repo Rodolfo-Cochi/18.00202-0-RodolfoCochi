@@ -35,9 +35,14 @@ public class Main {
 
 
         //Operacoes
-        conta.depositar(250);
-        
-        
+        String pedido1 = Transacoes.gerarQr(conta,250);
+        String pedido2 = Transacoes.gerarQr(conta2,1000);
+
+        Transacoes.transferirSaldo(conta,conta2,pedido1);
+        Transacoes.transferirSaldo(conta,conta3,pedido1);
+        Transacoes.transferirSaldo(conta,conta2,pedido1);
+        Transacoes.transferirSaldo(conta2,conta,pedido1);
+
         
         System.out.println(String.format("Usuario %s;Id %s;saldo %f",nome, conta.getIdConta(), conta.getSaldo()));
         System.out.println(String.format("Usuario %s;Id %s;saldo %f", nome2, conta2.getIdConta(), conta2.getSaldo()));
