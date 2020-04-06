@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Transacoes {
     int idConta;
-    String recebedor;
     double saldo;
 
     // Metodos da classe
@@ -14,28 +13,24 @@ public class Transacoes {
     }
 
     public static String gerarQr(Conta conta, double valor) {
-        String s = String.format("%s;%s;%s;%s", conta.getIdConta(), conta.getUsuario().getNome(), String.valueOf(valor),
-                String.valueOf(getRandomNumberInRange(1000, 9999)));
-        return s;
+        String Qr = String.format("%s;%s;%s;%s", conta.getIdConta(), conta.getUsuario().getNome(),
+                String.valueOf(valor), String.valueOf(getRandomNumberInRange(1000, 9999)));
+        return Qr;
     }
 
-    public static void transferirSaldo(Conta conta1, Conta conta2, String Qr) {
-        String[] dados = Qr.split(";");
-        Double.parseDouble(dados[2]);
-        if (conta1.getIdConta().equals(dados[0])) {
-            if (((conta2.getIdConta()).equals(dados[0]))) {
-                if ((conta1.getSaldo()) >= (Double.parseDouble(dados[2]))) {
-                    conta1.sacar(Double.parseDouble(dados[2]));
-                    conta2.depositar(Double.parseDouble(dados[2]));
-                } else {
-                    System.out.println("Saldo de " + conta1.getUsuario().getNome() + " nao deu.");
-                }
+    // de, para, Qr
+    public static void transferirSaldo(Conta conta, Conta conta2, String Qr) {
+        String dados[] = Qr.split(";");
+        if (conta.getIdConta().equals(dados[0])) {
+            if ((conta.getSaldo()) >= (Double.parseDouble(dados[2]))) {
+                conta.depositar(Double.parseDouble(dados[2]));
+                conta2.sacar(Double.parseDouble(dados[2]));
             } else {
-                System.out.println("Nao bateu.");
+                System.out.println("Saldo de " + conta2.getUsuario().getNome() + " nao deu.");
             }
-
+        } else {
+            System.out.println("Nao bateu.");
         }
+
     }
-
 }
-
