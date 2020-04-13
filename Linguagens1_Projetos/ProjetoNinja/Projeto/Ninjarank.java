@@ -8,6 +8,11 @@ public class Ninjarank extends Ninja {
         this.mission = mission;
     }
 
+    @Override
+    public void train() {
+        System.out.println("Treino pesado!\n");
+    }
+
     public void goToMission() {
         System.out.println("Dale na missao!\n");
     }

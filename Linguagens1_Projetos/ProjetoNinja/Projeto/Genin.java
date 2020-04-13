@@ -7,4 +7,5 @@ public class Genin extends Ninjarank {
     public void changeMission() {
         mission = "Salve";
     }
+    
 }
