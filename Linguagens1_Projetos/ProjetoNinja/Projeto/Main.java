@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Ninja ninja = new Ninja("Naruto", "Uzumaki");
-        ninja.train();
+        mostrarTreino(ninja);
         AcademicStudent academicStudent = new AcademicStudent("Sasuke", "Uchiha");
         mostrarTreino(academicStudent);
         Chuunin chuunin = new Chuunin("Iruka", "Umino", "Treinar XYZ");
