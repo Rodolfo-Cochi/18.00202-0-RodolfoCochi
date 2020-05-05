@@ -1,4 +1,4 @@
-
+package Linguagens1_Projetos.Pratica3.Aula4;
 
 public class Jogada {
     private String escolha, ganhoDe, percoDe;
@@ -7,9 +7,9 @@ public class Jogada {
     public static final String PAPEL = "papel";
     //Construtor do jogada
     public Jogada(String opcao){
-        if(opcao.equals(this.PEDRA)){
-            ganhoDe = this.TESOURA;
-            percoDe = this.PAPEL;
+        if(opcao.equals(PEDRA)){
+            ganhoDe = TESOURA;
+            percoDe = PAPEL;
         } else if(opcao.equals("papel")){
             ganhoDe = "pedra";
             percoDe = "tesoura";

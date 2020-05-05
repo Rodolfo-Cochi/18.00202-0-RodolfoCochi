@@ -1,3 +1,4 @@
+package Atividades.Atividade1;
 import java.util.Random;
 
 //Rodolfo Cochi 18.00202-0

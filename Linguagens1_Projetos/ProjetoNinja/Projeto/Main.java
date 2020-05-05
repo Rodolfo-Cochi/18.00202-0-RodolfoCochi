@@ -1,3 +1,4 @@
+package Linguagens1_Projetos.ProjetoNinja.Projeto;
 public class Main {
     public static void main(String[] args) {
         Ninja ninja = new Ninja("Naruto", "Uzumaki");

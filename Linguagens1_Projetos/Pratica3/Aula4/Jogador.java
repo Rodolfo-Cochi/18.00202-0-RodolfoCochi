@@ -1,5 +1,6 @@
+package Linguagens1_Projetos.Pratica3.Aula4;
 public class Jogador {
-    private String nome;
+    public String nome;
     private Jogada jogada;
 
     public Jogador(String nome, String escolha){

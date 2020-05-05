@@ -1,8 +1,9 @@
+package Linguagens1_Projetos.ProjetoNinja.Projeto;
 public class Ninja {
-    // Super Classe
-    private String name;
-    private String family;
-    private String[] jutsus;
+    //Super Classe
+    public String name;
+    public String family;
+    public String[] jutsus;
 
     // Construtores
     public Ninja(String name, String family) {

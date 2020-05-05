@@ -1,3 +1,4 @@
+package Linguagens1_Projetos.ProjetoNinja.Projeto;
 public class Ninjarank extends Ninja {
     protected String mission; // Toda heranca pode mudar, diferente de private onde apenas determinada classe
                               // pode mexer

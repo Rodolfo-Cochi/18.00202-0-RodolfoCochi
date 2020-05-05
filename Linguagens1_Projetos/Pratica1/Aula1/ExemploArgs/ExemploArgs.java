@@ -1,3 +1,4 @@
+package Linguagens1_Projetos.Pratica1.Aula1.ExemploArgs;
 class ExemploArgs {
 
     public static void main (String[] args) {

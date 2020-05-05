@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package Linguagens1_Projetos.Listas.Lista2;
 
 public class Jogador{
 

@@ -1,3 +1,4 @@
+package Linguagens1_Projetos.Pratica5;
 public class Personagem {
     public static final String URL_PERSONAGEM = "pokeapi.com/api/v1";
     private String nomePersonagem;

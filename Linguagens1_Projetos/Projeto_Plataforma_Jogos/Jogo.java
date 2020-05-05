@@ -1,3 +1,4 @@
+package Linguagens1_Projetos.Projeto_Plataforma_Jogos;
 public class Jogo {
     String nome;
     String genero;

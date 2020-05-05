@@ -1,6 +1,7 @@
+package Linguagens1_Projetos.Pratica5;
 public class MinhaClasse{
     private static int contaObjetos = 0;
-    private String nome;
+    public String nome;
 
     public MinhaClasse(){
         MinhaClasse.contaObjetos = MinhaClasse.contaObjetos +1;

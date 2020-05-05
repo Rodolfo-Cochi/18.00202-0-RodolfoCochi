@@ -1,3 +1,4 @@
+package Atividades.Atividade1;
 //Rodolfo Cochi 18.00202-0
 public class Conta {
     private Usuario usuario;

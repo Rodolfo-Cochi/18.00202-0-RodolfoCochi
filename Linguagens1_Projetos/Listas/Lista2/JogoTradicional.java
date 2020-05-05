@@ -1,3 +1,4 @@
+package Linguagens1_Projetos.Listas.Lista2;
 import java.util.Scanner;
 
 public class JogoTradicional {

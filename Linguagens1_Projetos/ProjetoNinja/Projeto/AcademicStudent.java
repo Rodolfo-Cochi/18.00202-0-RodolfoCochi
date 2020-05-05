@@ -1,3 +1,4 @@
+package Linguagens1_Projetos.ProjetoNinja.Projeto;
 //Classe filho uso do "extend"
 public class AcademicStudent extends Ninja{
 

@@ -1,3 +1,4 @@
+package Linguagens1_Projetos.Pratica1.Aula1.MeuPrograma;
 class MeuPrograma {
 	public static void main(String[] args) {
 		//Mensagem de saindo do sistema

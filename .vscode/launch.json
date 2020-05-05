@@ -1,0 +1,106 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>",
+            "request": "launch",
+            "mainClass": "Atividades.Atividade1.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EscolhadeJogo<18.00202-0-RodolfoCochi_7990a8af>",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Listas.Lista2.EscolhadeJogo",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ExemploArgs<18.00202-0-RodolfoCochi_7990a8af>",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Pratica1.Aula1.ExemploArgs.ExemploArgs",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MeuPrograma<18.00202-0-RodolfoCochi_7990a8af>",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Pratica1.Aula1.MeuPrograma.MeuPrograma",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>(1)",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Pratica1.Aula1.src.com.company.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ContaTestDrive<18.00202-0-RodolfoCochi_7990a8af>",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Pratica2.Aula3.ContaTestDrive",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>(2)",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Pratica3.Aula4.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>(3)",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Pratica5.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>(4)",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Pratica8.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>(5)",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.ProjetoNinja.Projeto.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>(6)",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Projeto_Herenca_Poly.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>(7)",
+            "request": "launch",
+            "mainClass": "Linguagens1_Projetos.Projeto_Plataforma_Jogos.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<18.00202-0-RodolfoCochi_7990a8af>(8)",
+            "request": "launch",
+            "mainClass": "testepacote.main.Main",
+            "projectName": "18.00202-0-RodolfoCochi_7990a8af"
+        }
+    ]
+}
