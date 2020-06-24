@@ -1,4 +1,4 @@
-package Cliente;
+package Funcionario;
 
 public class Usuario {
     String senha, email, nome;

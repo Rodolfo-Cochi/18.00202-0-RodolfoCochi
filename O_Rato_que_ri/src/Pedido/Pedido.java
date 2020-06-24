@@ -17,7 +17,7 @@ public class Pedido {
         return Id;
     }
 
-    public Pedido(String descricao, String pagamento) {
+    public Pedido(String descricao, String formadepagamento, String valor) {
         State = Estado.REALIZADO;
         Id = geradorId();
     }
