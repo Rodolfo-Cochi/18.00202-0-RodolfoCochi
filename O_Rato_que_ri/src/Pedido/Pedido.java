@@ -25,6 +25,22 @@ public class Pedido {
         return descricao;
     }
 
+    public void setState(Enum state) {
+        State = state;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public void setValor(String valor) {
+        this.valor = valor;
+    }
+
+    public void setFpag(Enum fpag) {
+        this.fpag = fpag;
+    }
+
     public String getValor() {
         return valor;
     }
