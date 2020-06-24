@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf562fb-b57d-4aa8-b133-47e7fb948317" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/OlaMundo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/OlaMundo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/out/production/OlaMundo/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OlaMundo/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="dbf562fb-b57d-4aa8-b133-47e7fb948317" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,11 +61,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1051" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593012702029">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1051" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1593012702029" />
+    <state x="662" y="140" key="new project wizard" timestamp="1593013383981">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="662" y="140" key="new project wizard/0.0.2560.1040@0.0.2560.1040" timestamp="1593013383981" />
   </component>
 </project>
