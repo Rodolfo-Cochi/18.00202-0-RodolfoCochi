@@ -1,5 +1,6 @@
 package com.company;
 
+import Funcionario.Usuario;
 import Pedido.Enum.FormaPagamento;
 import Pedido.Pedido;
 
@@ -13,71 +14,83 @@ public class Main {
         ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
         int op;
         Scanner scanner = new Scanner(System.in);
-        String desc, valor;
+        String desc, valor, nome, email, senha;
         int pag;
+
+
+        nome = "Rodolfo";
+        email = "rodolfocochi@maua.br";
+        System.out.println("Digite sua senha: ");
+        senha = scanner.nextLine();
+        Usuario user = new Usuario(nome, email, senha);
+
         do {
             Menu();
+
             op = Integer.parseInt(scanner.nextLine());
             switch (op) {
                 case 1:
-                    System.out.println("Faca seu pedido");
-                    desc = scanner.nextLine();
+                    if (user.comparador(senha)) {
+                        System.out.println("Faca seu pedido");
+                        desc = scanner.nextLine();
 
-                    System.out.println("Valor a ser pago: ");
-                    valor = scanner.nextLine();
+                        System.out.println("Valor a ser pago: ");
+                        valor = scanner.nextLine();
 
-                    System.out.println("Qual a forma de pagamento? \n 1 - Credito \n 2 - Debito \n 3 - Vale alimentacao \n 4 - Vale refeicao");
-                    pag = Integer.parseInt(scanner.nextLine());
-                    String fpag;
+                        System.out.println("Qual a forma de pagamento? \n 1 - Credito \n 2 - Debito \n 3 - Vale alimentacao \n 4 - Vale refeicao");
+                        pag = Integer.parseInt(scanner.nextLine());
+                        String fpag;
 
-                    switch (pag) {
-                        case 1:
-                            fpag = "Credito";
-                            Pedido p1 = new Pedido(desc, fpag, valor);
-                            pedidos.add(p1);
+                        switch (pag) {
+                            case 1:
+                                fpag = "Credito";
+                                Pedido p1 = new Pedido(desc, fpag, valor);
+                                pedidos.add(p1);
 
-                            System.out.println("Id: " + p1.getId());
-                            System.out.println("Estado do pedido: " + p1.getState());
-                            System.out.println("Descricao do pedido: " + desc);
-                            System.out.println("Forma de Pagamento: " + fpag);
-                            System.out.println("Valor: R$ " + valor);
+                                System.out.println("Id: " + p1.getId());
+                                System.out.println("Estado do pedido: " + p1.getState());
+                                System.out.println("Descricao do pedido: " + desc);
+                                System.out.println("Forma de Pagamento: " + fpag);
+                                System.out.println("Valor: R$ " + valor);
 
-                            break;
-                        case 2:
-                            fpag = "Debito";
-                            Pedido p2 = new Pedido(desc, fpag, valor);
-                            pedidos.add(p2);
+                                break;
+                            case 2:
+                                fpag = "Debito";
+                                Pedido p2 = new Pedido(desc, fpag, valor);
+                                pedidos.add(p2);
 
-                            System.out.println("Id: " + p2.getId());
-                            System.out.println("Estado do pedido: " + p2.getState());
-                            System.out.println("Descricao do pedido: " + desc);
-                            System.out.println("Forma de Pagamento: " + fpag);
-                            System.out.println("Valor: R$ " + valor);
-                            break;
-                        case 3:
-                            fpag = "Vale alimentacao";
-                            Pedido p3 = new Pedido(desc, fpag, valor);
-                            pedidos.add(p3);
+                                System.out.println("Id: " + p2.getId());
+                                System.out.println("Estado do pedido: " + p2.getState());
+                                System.out.println("Descricao do pedido: " + desc);
+                                System.out.println("Forma de Pagamento: " + fpag);
+                                System.out.println("Valor: R$ " + valor);
+                                break;
+                            case 3:
+                                fpag = "Vale alimentacao";
+                                Pedido p3 = new Pedido(desc, fpag, valor);
+                                pedidos.add(p3);
 
-                            System.out.println("Id: " + p3.getId());
-                            System.out.println("Estado do pedido: " + p3.getState());
-                            System.out.println("Descricao do pedido: " + desc);
-                            System.out.println("Forma de Pagamento: " + fpag);
-                            System.out.println("Valor: R$ " + valor);
-                            break;
-                        case 4:
-                            fpag = "Vale refeicao";
-                            Pedido p4 = new Pedido(desc, fpag, valor);
-                            pedidos.add(p4);
+                                System.out.println("Id: " + p3.getId());
+                                System.out.println("Estado do pedido: " + p3.getState());
+                                System.out.println("Descricao do pedido: " + desc);
+                                System.out.println("Forma de Pagamento: " + fpag);
+                                System.out.println("Valor: R$ " + valor);
+                                break;
+                            case 4:
+                                fpag = "Vale refeicao";
+                                Pedido p4 = new Pedido(desc, fpag, valor);
+                                pedidos.add(p4);
 
-                            System.out.println("Id: " + p4.getId());
-                            System.out.println("Estado do pedido: " + p4.getState());
-                            System.out.println("Descricao do pedido: " + desc);
-                            System.out.println("Forma de Pagamento: " + fpag);
-                            System.out.println("Valor: R$ " + valor);
-                            break;
+                                System.out.println("Id: " + p4.getId());
+                                System.out.println("Estado do pedido: " + p4.getState());
+                                System.out.println("Descricao do pedido: " + desc);
+                                System.out.println("Forma de Pagamento: " + fpag);
+                                System.out.println("Valor: R$ " + valor);
+                                break;
+                        }
+                    }else{
+                        System.out.println("Infelizmente voce nao tem acesso");
                     }
-
 
 
                     break;
