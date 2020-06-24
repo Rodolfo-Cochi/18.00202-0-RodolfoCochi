@@ -2,7 +2,7 @@ package Pedido;
 
 import java.util.Random;
 
-public abstract class Pedido() {
+public abstract class Pedido{
 
 
 
