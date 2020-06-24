@@ -1,5 +1,5 @@
 package Pedido;
 
-public enum Descricao {
+public class Descricao {
 
 }

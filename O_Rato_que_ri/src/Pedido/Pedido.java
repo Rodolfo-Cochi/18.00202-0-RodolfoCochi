@@ -2,8 +2,10 @@ package Pedido;
 
 import java.util.Random;
 
-public class Pedido {
-    String id;
+public abstract class Pedido() {
+
+
+
 
     private String geradorId(){
         Random random = new Random();
