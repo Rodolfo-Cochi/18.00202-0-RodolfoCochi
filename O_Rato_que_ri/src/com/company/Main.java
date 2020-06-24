@@ -17,16 +17,24 @@ public class Main {
         String desc, valor, nome, email, senha;
         int pag;
 
-
+        //Pre cadastrado
         nome = "Rodolfo";
         email = "rodolfocochi@maua.br";
+
+        //Check de senha
+        System.out.println("\nUsuario: " + nome);
         System.out.println("Digite sua senha: ");
         senha = scanner.nextLine();
+
+        //Criar usuario
         Usuario user = new Usuario(nome, email, senha);
 
         do {
-            Menu();
+            //saber quem esta logado
+            System.out.println("\nUsuario: " + nome);
 
+            //print do menu
+            Menu();
             op = Integer.parseInt(scanner.nextLine());
             switch (op) {
                 case 1:
@@ -38,6 +46,7 @@ public class Main {
                         valor = scanner.nextLine();
 
                         System.out.println("Qual a forma de pagamento? \n 1 - Credito \n 2 - Debito \n 3 - Vale alimentacao \n 4 - Vale refeicao");
+
                         pag = Integer.parseInt(scanner.nextLine());
                         String fpag;
 
@@ -110,11 +119,12 @@ public class Main {
     }
 
     public static void Menu() {
-        System.out.println("\n Bem vindo ao Rato que Ri");
+        System.out.println("\nLogado em Rato que Ri");
         System.out.println("1 - Nova Venda");
         System.out.println("2 - Verificar pedidos");
         System.out.println("3 - Alterar pedidos");
         System.out.println("0 - Sair");
         System.out.println("Digite sua opcao: ");
     }
+
 }
