@@ -45,6 +45,12 @@ public class Pedido {
         return valor;
     }
 
+    /**
+     * Construtor do pedido.
+     * @param descricao (O pedido feito pelo usuario)
+     * @param formadepagamento (Opcao que o usario escolheu para pagar pelo produto)
+     * @param valor (valor final apos o pedido)
+     */
     public Pedido(String descricao, int formadepagamento, String valor) {
         switch (formadepagamento) {
             case 1:
@@ -69,7 +75,10 @@ public class Pedido {
         this.valor = valor;
     }
 
-
+    /**
+     * Gerador de um numero aleatorio para servir como ID do pedido.
+     * @return (o numero gerado)
+     */
     private String geradorId() {
         Random random = new Random();
         String idGerado = "";
