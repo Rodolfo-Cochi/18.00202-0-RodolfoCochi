@@ -17,7 +17,7 @@ public class NoDaArvore {
 
     //Variaveis auxiliares
     int maiornum = 0;
-    int menornum = 0;
+    int menornum = 10000; //Mudar para qualquer nova arvore.
     int soma = 0;
     int nos = 0;
     int folhas = 0;

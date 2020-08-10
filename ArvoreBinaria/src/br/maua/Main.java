@@ -6,14 +6,24 @@ public class Main {
 
     public static void main(String[] args) {
         //Criacao da Arvore
-        NoDaArvore no6 = new NoDaArvore(6,null,null);
-        NoDaArvore no5 = new NoDaArvore(5,null,null);
-        NoDaArvore no3 = new NoDaArvore(3,no5,no6);
-        NoDaArvore no4 = new NoDaArvore(4,null, null);
-        NoDaArvore no2 = new NoDaArvore(2,no3, no4);
-        NoDaArvore no1 = new NoDaArvore(1,null, null);
-        NoDaArvore raiz = new NoDaArvore(0,no1, no2);
-        
+//        NoDaArvore no6 = new NoDaArvore(6,null,null);
+//        NoDaArvore no5 = new NoDaArvore(5,null,null);
+//        NoDaArvore no3 = new NoDaArvore(3,no5,no6);
+//        NoDaArvore no4 = new NoDaArvore(4,null, null);
+//        NoDaArvore no2 = new NoDaArvore(2,no3, no4);
+//        NoDaArvore no1 = new NoDaArvore(1,null, null);
+//        NoDaArvore raiz = new NoDaArvore(0,no1, no2);
+
+          NoDaArvore no5 = new NoDaArvore(5, null, null);
+          NoDaArvore no10 = new NoDaArvore(10, null, null);
+          NoDaArvore no9 = new NoDaArvore(9, no10, no5);
+          NoDaArvore no8 = new NoDaArvore(8, null, null);
+          NoDaArvore no7 = new NoDaArvore(7, no8, no9);
+          NoDaArvore raiz = new NoDaArvore(3, no7, null);
+
+
+
+
         //Prints
         System.out.println("Pre-ordem");
         raiz.imprimirPreOrdem(raiz);
@@ -49,3 +59,5 @@ public class Main {
 
     }
 }
+
+
