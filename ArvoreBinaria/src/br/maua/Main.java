@@ -1,40 +1,50 @@
 package br.maua;
 
+import br.maua.Arvore.NoDaArvore;
+
 public class Main {
 
     public static void main(String[] args) {
-        Arvore.CriarArvore();
-
+        //Criacao da Arvore
+        NoDaArvore no6 = new NoDaArvore(6,null,null);
+        NoDaArvore no5 = new NoDaArvore(5,null,null);
+        NoDaArvore no3 = new NoDaArvore(3,no5,no6);
+        NoDaArvore no4 = new NoDaArvore(4,null, null);
+        NoDaArvore no2 = new NoDaArvore(2,no3, no4);
+        NoDaArvore no1 = new NoDaArvore(1,null, null);
+        NoDaArvore raiz = new NoDaArvore(0,no1, no2);
+        
+        //Prints
         System.out.println("Pre-ordem");
-        Arvore.CriarArvore().imprimirPreOrdem(Arvore.CriarArvore());
+        raiz.imprimirPreOrdem(raiz);
         System.out.println("Em Ordem");
-        Arvore.CriarArvore().imprimirEmOrdem(Arvore.CriarArvore());
+        raiz.imprimirEmOrdem(raiz);
         System.out.println("Pos Ordem");
-        Arvore.CriarArvore().imprimirPosOrdem(Arvore.CriarArvore());
+        raiz.imprimirPosOrdem(raiz);
         System.out.println("Verificacao");
-        Arvore.CriarArvore().Verificacao(Arvore.CriarArvore(), 5);
+        raiz.Verificacao(raiz, 5);
         System.out.println("Maior Numero");
-        Arvore.CriarArvore().MaiorNum(Arvore.CriarArvore());
-        System.out.println(Arvore.CriarArvore().getMaiornum());
+        raiz.MaiorNum(raiz);
+        System.out.println(raiz.getMaiornum());
         System.out.println("Soma");
-        Arvore.CriarArvore().Soma(Arvore.CriarArvore());
-        System.out.println(Arvore.CriarArvore().getSoma());
+        raiz.Soma(raiz);
+        System.out.println(raiz.getSoma());
         System.out.println("Menor num");
-        Arvore.CriarArvore().MenorNum(Arvore.CriarArvore());
-        System.out.println(Arvore.CriarArvore().getMenornum());
+        raiz.MenorNum(raiz);
+        System.out.println(raiz.getMenornum());
         System.out.println("contar nos");
-        Arvore.CriarArvore().ContarNos(Arvore.CriarArvore());
-        System.out.println(Arvore.CriarArvore().getNos());
+        raiz.ContarNos(raiz);
+        System.out.println(raiz.getNos());
         System.out.println("Media");
-        Arvore.CriarArvore().media(Arvore.CriarArvore());
+        raiz.Media(raiz);
         System.out.println("folhas");
-        Arvore.CriarArvore().ContaFolhas(Arvore.CriarArvore());
-        System.out.println(Arvore.CriarArvore().getFolhas());
+        raiz.ContaFolhas(raiz);
+        System.out.println(raiz.getFolhas());
         System.out.println("Contar Nulls");
-        Arvore.CriarArvore().ContarNull(Arvore.CriarArvore());
-        System.out.println(Arvore.CriarArvore().getNulos());
+        raiz.ContarNull(raiz);
+        System.out.println(raiz.getNulos());
         System.out.println("Altura");
-        System.out.println(Arvore.CriarArvore().altura(Arvore.CriarArvore()));
+        System.out.println(raiz.altura(raiz));
 
 
     }

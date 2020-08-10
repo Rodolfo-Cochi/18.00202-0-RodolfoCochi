@@ -1,4 +1,4 @@
-package br.maua;
+package br.maua.Arvore;
 
 public class NoDaArvore {
 
@@ -8,7 +8,7 @@ public class NoDaArvore {
     public NoDaArvore direita;
 
     //Construtor do no da Arvore
-    NoDaArvore(int valor, NoDaArvore esquerda, NoDaArvore direita) {
+    public NoDaArvore(int valor, NoDaArvore esquerda, NoDaArvore direita) {
         this.valor = valor;
         this.esquerda = esquerda;
         this.direita = direita;
@@ -106,10 +106,6 @@ public class NoDaArvore {
     }
 
 
-    public int getSoma() {
-        return soma;
-    }
-
     public void Soma(NoDaArvore n) {
 
         if (n.esquerda != null) {
@@ -134,7 +130,7 @@ public class NoDaArvore {
 
     }
 
-    public void media(NoDaArvore n) {
+    public void Media(NoDaArvore n) {
         n.Soma(n);
         n.ContarNos(n);
         int med = n.getSoma() / n.getNos();
@@ -190,13 +186,16 @@ public class NoDaArvore {
 
     //GETTERS
 
-
     public int getMaiornum() {
         return maiornum;
     }
 
     public int getMenornum() {
         return menornum;
+    }
+
+    public int getSoma() {
+        return soma;
     }
 
     public int getNos() {
