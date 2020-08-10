@@ -14,7 +14,11 @@ public class Main {
 //        NoDaArvore no1 = new NoDaArvore(1,null, null);
 //        NoDaArvore raiz = new NoDaArvore(0,no1, no2);
 
-          NoDaArvore no5 = new NoDaArvore(5, null, null);
+          //Adcionando novo no no fim da arvore
+          NoDaArvore no13 = new NoDaArvore(13, null, null);
+
+          //Criacao da arvore original
+          NoDaArvore no5 = new NoDaArvore(5, no13, null);
           NoDaArvore no10 = new NoDaArvore(10, null, null);
           NoDaArvore no9 = new NoDaArvore(9, no10, no5);
           NoDaArvore no8 = new NoDaArvore(8, null, null);
