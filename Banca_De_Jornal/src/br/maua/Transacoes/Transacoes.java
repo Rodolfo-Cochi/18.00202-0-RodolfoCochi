@@ -1,22 +1,29 @@
 package br.maua.Transacoes;
 
+import br.maua.Produtos.ListaDeProdutos;
 import br.maua.Produtos.Produto;
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.json.JSONArray;
 
 public class Transacoes {
 
-    public static double Comprar(Produto produto, int quantidade){
-        double pagar = 0;
+    public static void Venda(Produto produto, int quantidade) {
         int novaqnt;
-
-        if (quantidade < produto.getQuantidade()){
-            novaqnt = produto.getQuantidade() - quantidade;
-            pagar = quantidade*produto.getPreco();
-            produto.setQuantidade(novaqnt);
-            return pagar;
-        }else{
-            System.out.println("Em estoque atual: " + produto.getQuantidade());
-        }
-        return 0;
+        novaqnt = produto.getQuantidade() - quantidade;
+        produto.setQuantidade(novaqnt);
     }
+
+
+
+    public static void Estocar(Produto produto, int quantidade) {
+        int novaqnt;
+        novaqnt = produto.getQuantidade() + quantidade;
+        produto.setQuantidade(novaqnt);
+    }
+
+    public static double PrecoVenda(Produto produto,int quantidade){
+        double lucro = produto.getPreco()*quantidade;
+        return lucro;
+    }
+
 }

@@ -1,1 +1,1 @@
-[{"preco":10,"tipo":"Revista","quantidade":100},{"preco":12.99,"tipo":"Manga","quantidade":100},{"preco":2,"tipo":"Jornal","quantidade":100},{"preco":4,"tipo":"Gibi","quantidade":100}]
+[{"tipo":"Revista","R$":10,"quantidade":100},{"tipo":"Manga","R$":12.99,"quantidade":100},{"tipo":"Jornal","R$":2,"quantidade":100},{"tipo":"Gibi","R$":4,"quantidade":100}]
