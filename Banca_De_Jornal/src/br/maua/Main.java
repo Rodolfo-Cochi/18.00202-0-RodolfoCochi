@@ -2,14 +2,12 @@ package br.maua;
 
 import br.maua.Produtos.ListaDeProdutos;
 import br.maua.Produtos.Produto;
-import br.maua.Produtos.ProdutoParser;
 import br.maua.Transacoes.Transacoes;
 import br.maua.Usuario.User;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -24,7 +22,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         //Criacao dos Produtos
-        int i = 2;
+
 
         //Declaracao de Variaveis
         JSONArray json;
@@ -34,21 +32,21 @@ public class Main {
         Produto gibi = null;
         ListaDeProdutos lista = new ListaDeProdutos();
 
-//        if (i == 1){
-//            revista = new Produto("Revista", 10.00, 100);
-//            manga = new Produto("Manga", 12.99, 100);
-//            jornal = new Produto("Jornal", 2.00, 100);
-//            gibi = new Produto("Gibi", 4.00, 100);
+//        if (nao existir o arquivo){
+            revista = new Produto("Revista", 10.00, 100);
+            manga = new Produto("Manga", 12.99, 100);
+            jornal = new Produto("Jornal", 2.00, 100);
+            gibi = new Produto("Gibi", 4.00, 100);
+
+            //Inicializando Arquivo
+            lista.addProduto(revista);
+            lista.addProduto(manga);
+            lista.addProduto(jornal);
+            lista.addProduto(gibi);
+            json = ListaDeProdutos.toJson(lista);
+            escreverArquivo("estoque.json", json);
 //
-//            //Inicializando Arquivo
-//            lista.addProduto(revista);
-//            lista.addProduto(manga);
-//            lista.addProduto(jornal);
-//            lista.addProduto(gibi);
-//            json = ListaDeProdutos.toJson(lista);
-//            escreverArquivo("estoque.json", json);
-//
-//        }else{
+//        }else(existir um arquivo){      //Criar os produtos com o numero do estoque do arquivo
 //            //se existir
 //            json = lerArquivo("estoque.json");
 //            lista = ListaDeProdutos.fromJson(json);
@@ -108,7 +106,7 @@ public class Main {
                                 json = ListaDeProdutos.toJson(lista);
                                 escreverArquivo("estoque.json", json);
 
-                                double lucro = Transacoes.PrecoVenda(revista, qnt);
+                                double lucro = Transacoes.Lucro(revista, qnt);
                                 Produto lucrorevista = new Produto("Revista", lucro, qnt);
                                 listavenda.addProduto(lucrorevista);
                                 jsonlucro = ListaDeProdutos.toJson(listavenda);
@@ -124,7 +122,7 @@ public class Main {
                                 escreverArquivo("estoque.json", json);
 
 
-                                lucro = Transacoes.PrecoVenda(revista, qnt);
+                                lucro = Transacoes.Lucro(revista, qnt);
                                 Produto lucromanga = new Produto("Manga", lucro, qnt);
                                 listavenda.addProduto(lucromanga);
                                 jsonlucro = ListaDeProdutos.toJson(listavenda);
@@ -139,7 +137,7 @@ public class Main {
                                 json = ListaDeProdutos.toJson(lista);
                                 escreverArquivo("estoque.json", json);
 
-                                lucro = Transacoes.PrecoVenda(revista, qnt);
+                                lucro = Transacoes.Lucro(revista, qnt);
                                 Produto lucrogibi = new Produto("Manga", lucro, qnt);
                                 listavenda.addProduto(lucrogibi);
                                 jsonlucro = ListaDeProdutos.toJson(listavenda);
@@ -154,7 +152,7 @@ public class Main {
                                 json = ListaDeProdutos.toJson(lista);
                                 escreverArquivo("estoque.json", json);
 
-                                lucro = Transacoes.PrecoVenda(revista, qnt);
+                                lucro = Transacoes.Lucro(revista, qnt);
                                 Produto lucrojornal = new Produto("Manga", lucro, qnt);
                                 listavenda.addProduto(lucrojornal);
                                 jsonlucro = ListaDeProdutos.toJson(listavenda);

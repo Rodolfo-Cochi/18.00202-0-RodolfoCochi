@@ -21,7 +21,7 @@ public class Transacoes {
         produto.setQuantidade(novaqnt);
     }
 
-    public static double PrecoVenda(Produto produto,int quantidade){
+    public static double Lucro(Produto produto, int quantidade){
         double lucro = produto.getPreco()*quantidade;
         return lucro;
     }
