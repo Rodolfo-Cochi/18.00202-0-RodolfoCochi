@@ -5,7 +5,7 @@ import br.maua.Arvore.NoDaArvore;
 public class Main {
 
     public static void main(String[] args) {
-        //Criacao da Arvore
+        //Criacao da Arvore ex 12
 //        NoDaArvore no6 = new NoDaArvore(6,null,null);
 //        NoDaArvore no5 = new NoDaArvore(5,null,null);
 //        NoDaArvore no3 = new NoDaArvore(3,no5,no6);
@@ -14,16 +14,16 @@ public class Main {
 //        NoDaArvore no1 = new NoDaArvore(1,null, null);
 //        NoDaArvore raiz = new NoDaArvore(0,no1, no2);
 
-          //Adcionando novo no no fim da arvore
+        //Adcionando novo no no fim da arvore
           NoDaArvore no13 = new NoDaArvore(13, null, null);
 
-          //Criacao da arvore original
-          NoDaArvore no5 = new NoDaArvore(5, no13, null);
+          //Criacao da arvore original exercicio 14
+          NoDaArvore no5 = new NoDaArvore(5, null, null);
           NoDaArvore no10 = new NoDaArvore(10, null, null);
-          NoDaArvore no9 = new NoDaArvore(9, no10, no5);
-          NoDaArvore no8 = new NoDaArvore(8, null, null);
-          NoDaArvore no7 = new NoDaArvore(7, no8, no9);
-          NoDaArvore raiz = new NoDaArvore(3, no7, null);
+          NoDaArvore no9 = new NoDaArvore(9, null, no10);
+          NoDaArvore no8 = new NoDaArvore(8, null, no9);
+          NoDaArvore no7 = new NoDaArvore(7, no5, no8);
+          NoDaArvore raiz = new NoDaArvore(3, null, no7);
 
 
 
