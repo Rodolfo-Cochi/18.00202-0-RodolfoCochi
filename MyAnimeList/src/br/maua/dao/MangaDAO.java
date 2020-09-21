@@ -56,7 +56,6 @@ public class MangaDAO implements DAO<Manga> {
             preparedStatement.setString(6, manga.getTipo());
             preparedStatement.setFloat(7, manga.getNota());
 
-            //Executando
             int retorno = preparedStatement.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
