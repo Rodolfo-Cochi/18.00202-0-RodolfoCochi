@@ -45,7 +45,8 @@ public class Main {
             lista.addProduto(gibi);
             json = ListaDeProdutos.toJson(lista);
             escreverArquivo("estoque.json", json);
-//
+//        }
+
 //        }else(existir um arquivo){      //Criar os produtos com o numero do estoque do arquivo
 //            //se existir
 //            json = lerArquivo("estoque.json");
