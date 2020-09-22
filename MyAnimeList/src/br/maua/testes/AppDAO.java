@@ -36,16 +36,25 @@ public class AppDAO {
                 case 0:
                     rodar = false;
                     break;
+                /**
+                 * O caso 1 mostra todos os animes cadastrados no banco de dados local.
+                 */
                 case 1:
                     animes = animeDAO.getAll();
                     System.out.println("Animes: ");
                     animes.forEach(anime -> System.out.println(anime));
                     break;
+                /**
+                 * O caso 2 mostra todos os mangas cadastrados no banco de dados local.
+                 */
                 case 2:
                     mangas = mangaDAO.getAll();
                     System.out.println("Mangas: ");
                     mangas.forEach(manga -> System.out.println(manga));
                     break;
+                /**
+                 *
+                 */
                 case 3:
                     animes = animeDAO.getAll();
                     System.out.println("Digite o nome: ");
@@ -77,23 +86,20 @@ public class AppDAO {
                     String nomeManga = scanner.nextLine();
                     String nomeMangaFormat = nomeManga.replaceAll(" ", "-");
                     Manga mangaNovo = MangaParser.fromJson(leituraAPI("manga", nomeMangaFormat));
-                    help = true;
+                    boolean aux = true;
 
                     for (Anime anime : animes) {
                         if (anime.getTitulo().equals(mangaNovo.getTitulo())) {
                             System.out.println(mangaNovo);
-                            help = false;
+                            aux = false;
                         }
                     }
-                    if (help) {
-
+                    if (aux) {
                         //Inserir no Banco
                         mangaDAO.insert(mangaNovo);
-
                         //Printar
                         System.out.println(mangaNovo);
                     }
-
                     break;
             }
         } while (rodar);
