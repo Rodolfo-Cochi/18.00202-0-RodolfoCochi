@@ -6,6 +6,10 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe criada para conexão com o banco de dados "anime".
+ */
+
 public class AnimeDAO implements DAO<Anime> {
     private Connection connection;
     private String DBconnectionString = "jdbc:sqlite:AnimeList.db";
@@ -17,6 +21,12 @@ public class AnimeDAO implements DAO<Anime> {
             throwables.printStackTrace();
         }
     }
+
+    /**
+     * Método criado para coletar dados de todos os animes cadastrados no banco de dados local, alocando tais informações em uma lista de animes.
+     *
+     * @return ArrayList - animes
+     */
 
     @Override
     public List<Anime> getAll() {
@@ -42,9 +52,15 @@ public class AnimeDAO implements DAO<Anime> {
         return animes;
     }
 
+    /**
+     * Método criado para inserir um novo anime no banco de dados local, recebendo tal anime como parâmetro.
+     *
+     * @param anime
+     */
+
     @Override
     public void insert(Anime anime) {
-        try{
+        try {
             PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO anime (titulo, url, sinopse, epsodios, nota, tipo) VALUES (?, ?, ?, ?, ?, ?);");
             preparedStatement.setString(1, anime.getTitulo());
             preparedStatement.setString(2, anime.getUrl());
@@ -54,7 +70,7 @@ public class AnimeDAO implements DAO<Anime> {
             preparedStatement.setString(6, anime.getTipo());
             //Executando
             int retorno = preparedStatement.executeUpdate();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -7,6 +7,10 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe criada para conexão com o banco de dados "manga".
+ */
+
 public class MangaDAO implements DAO<Manga> {
     private Connection connection;
     private String DBconnectionString = "jdbc:sqlite:AnimeList.db";
@@ -18,6 +22,12 @@ public class MangaDAO implements DAO<Manga> {
             throwables.printStackTrace();
         }
     }
+
+    /**
+     * Método criado para coletar dados de todos os mangas cadastrados no banco de dados local, alocando tais informações em uma lista.
+     *
+     * @return ArrayList - mangas
+     */
 
     @Override
     public List<Manga> getAll() {
@@ -43,6 +53,12 @@ public class MangaDAO implements DAO<Manga> {
         }
         return mangas;
     }
+
+    /**
+     * Método criado para inserir um novo manga no banco de dados local, recebendo tal manga como parâmetro.
+     *
+     * @param manga
+     */
 
     @Override
     public void insert(Manga manga) {

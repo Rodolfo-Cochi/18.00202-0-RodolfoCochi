@@ -27,6 +27,10 @@ public class AppDAO {
         scanner = new Scanner(System.in);
     }
 
+    /**
+     * Método que contém a parte lógica do projeto.
+     * @throws Exception
+     */
     public void run() throws Exception {
         boolean rodar = true;
         do {
@@ -53,7 +57,8 @@ public class AppDAO {
                     mangas.forEach(manga -> System.out.println(manga));
                     break;
                 /**
-                 *
+                 * O caso 3 pega o nome de um anime desejado pelo usuário e busca no banco de dados local para mostrar as informações.
+                 * Caso o anime não seja encontrado, é feita uma busca na API para coleta de dados e inserção destes no banco local, logo após são mostradas as informações na tela.
                  */
                 case 3:
                     animes = animeDAO.getAll();
@@ -80,6 +85,11 @@ public class AppDAO {
 
 
                     break;
+
+                /**
+                 * O caso 4 pega o nome de um manga desejado pelo usuário e busca no banco de dados local para mostrar as informações.
+                 * Caso o manga não seja encontrado, é feita uma busca na API para coleta de dados e inserção destes no banco local, logo após são mostradas as informações na tela.
+                 */
                 case 4:
                     mangas = mangaDAO.getAll();
                     System.out.println("Digite o nome: ");
@@ -105,6 +115,9 @@ public class AppDAO {
         } while (rodar);
     }
 
+    /**
+     * Método criado para mostrar o menu na tela, de forma a não poluir o programa
+     */
     private void menu() {
         System.out.println("DB_Animes:");
         System.out.println("1 - Animes Cadastrados");

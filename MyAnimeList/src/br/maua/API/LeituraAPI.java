@@ -17,6 +17,7 @@ public class LeituraAPI {
 
     /**
      * Metodo criado para coleta de dados da API, retornando um JSONObject para facilitar manipulação.
+     *
      * @param tipo
      * @param titulo
      * @return JSONObject

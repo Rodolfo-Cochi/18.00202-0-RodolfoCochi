@@ -11,10 +11,16 @@ import java.net.URL;
 
 import static br.maua.API.LeituraAPI.leituraAPI;
 
+/**
+ * Classe criada para executar o programa.
+ */
 public class Main {
 
     public static void main(String[] args) throws Exception{
+        //Criacao do app que sera executado
         AppDAO app = new AppDAO();
+
+        //Execução do app
         app.run();
     }
 
