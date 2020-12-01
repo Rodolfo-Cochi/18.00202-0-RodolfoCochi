@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Screen/screen3.dart';
+import 'package:flutter_app/Screen/screen4.dart';
 import 'package:flutter_app/models/pokemon.dart';
 import 'package:flutter_app/utilities/network_helper.dart';
 
@@ -85,9 +86,17 @@ class _Screen2State extends State<Screen2> {
         height: 60,
         width: 330,
         child: ElevatedButton(
-          onPressed: null,
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Screen4()),
+            );
+            setState(() {
+              hasbeenPressed = !hasbeenPressed;
+            });
+          },
           child: Text(
-            "Pokemon 2",
+            "Ratata",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 35.0,
@@ -103,9 +112,17 @@ class _Screen2State extends State<Screen2> {
         height: 60,
         width: 330,
         child: ElevatedButton(
-          onPressed: null,
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Screen4()),
+            );
+            setState(() {
+              hasbeenPressed = !hasbeenPressed;
+            });
+          },
           child: Text(
-            "Pokémon 3",
+            "Geodude",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 35.0,
