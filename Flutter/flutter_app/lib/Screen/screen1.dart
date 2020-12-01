@@ -7,7 +7,8 @@ class Screen1 extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: const Text("Poke Guesser"),
+          title: const Text("Poke Guesser",
+          style: TextStyle(fontFamily: "Pokemon"),),
         ),
         body: SingleChildScrollView(
             child: Stack(
@@ -22,6 +23,7 @@ class Screen1 extends StatelessWidget {
                 width: 200.0,
                 child: new ElevatedButton(onPressed: null, child: Text("Play !",
                 style: new TextStyle(
+                  fontFamily: "Pokemon",
                   fontSize: 50.0
                 ),)))
 
