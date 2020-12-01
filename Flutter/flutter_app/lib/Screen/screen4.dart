@@ -81,7 +81,7 @@ class Screen4 extends StatelessWidget {
                 Positioned(
                     left: 20.0,
                     bottom: 500.0,
-                    child: Text("Oops try agay !",
+                    child: Text("Oops try again !",
                         style:
                         new TextStyle(fontFamily: "Pokemon", fontSize: 45.0)))
               ],
