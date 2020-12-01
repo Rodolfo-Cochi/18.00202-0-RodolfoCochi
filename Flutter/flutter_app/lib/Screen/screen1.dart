@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Screen/screen2.dart';
 
 class Screen1 extends StatelessWidget {
   @override
@@ -21,7 +22,11 @@ class Screen1 extends StatelessWidget {
                 left: 100.0,
                 bottom: 150.0,
                 width: 200.0,
-                child: new ElevatedButton(onPressed: null, child: Text("Play !",
+                child: new ElevatedButton(onPressed: (){
+                  Navigator.push(context,
+                  MaterialPageRoute(builder:(context) => Screen2()),
+                  );
+                }, child: Text("Play !",
                 style: new TextStyle(
                   fontFamily: "Pokemon",
                   fontSize: 50.0
