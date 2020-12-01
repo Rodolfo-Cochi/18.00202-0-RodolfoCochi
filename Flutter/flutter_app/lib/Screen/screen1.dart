@@ -9,11 +9,24 @@ import 'dart:math';
 class Screen1 extends StatelessWidget {
   Random random = new Random();
   Pokemon_Obj pokemon = new Pokemon_Obj();
+  Pokemon_Obj pokemon1 = new Pokemon_Obj();
+  Pokemon_Obj pokemon2 = new Pokemon_Obj();
+  Pokemon_Obj pokemon3 = new Pokemon_Obj();
 
   Future FetchPoke() async {
     var requisicao = NetworkHelper(
         url: "https://pokeapi.co/api/v2/pokemon-form/${random.nextInt(900)}");
     pokemon = Pokemon_Obj.fromJson(await requisicao.getData());
+    var requisicao2 =
+    NetworkHelper(url: "https://pokeapi.co/api/v2/pokemon-form/${random.nextInt(895)}");
+    pokemon1 = Pokemon_Obj.fromJson(await requisicao2.getData());
+    var requisicao3 =
+    NetworkHelper(url: "https://pokeapi.co/api/v2/pokemon-form/${random.nextInt(895)}");
+    pokemon2 = Pokemon_Obj.fromJson(await requisicao3.getData());
+    var requisicao4 =
+    NetworkHelper(url: "https://pokeapi.co/api/v2/pokemon-form/${random.nextInt(895)}");
+    pokemon3 = Pokemon_Obj.fromJson(await requisicao4.getData());
+
   }
 
   @override
@@ -43,7 +56,7 @@ class Screen1 extends StatelessWidget {
                   await FetchPoke();
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Screen2(poke: pokemon)),
+                    MaterialPageRoute(builder: (context) => Screen2(poke: pokemon, poke1: pokemon1, poke2: pokemon2,)),
                   );
                 },
                 child: Text(

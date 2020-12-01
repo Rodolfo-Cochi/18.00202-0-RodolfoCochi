@@ -8,8 +8,11 @@ import 'package:flutter_app/utilities/network_helper.dart';
 
 class Screen2 extends StatefulWidget {
   final Pokemon_Obj poke;
+  final Pokemon_Obj poke1;
+  final Pokemon_Obj poke2;
 
-  const Screen2({Key key, @required this.poke}) : super(key: key);
+
+  const Screen2({Key key, @required this.poke, @required this.poke1,  @required this.poke2,}) : super(key: key);
 
   @override
   _Screen2State createState() => _Screen2State();
@@ -70,37 +73,37 @@ class _Screen2State extends State<Screen2> {
               });
             },
             child: Text(
-            widget.poke.name,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 35.0,
-              color: Colors.black,
+              widget.poke.name,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 35.0,
+                color: Colors.black,
+              ),
             ),
           ),
         ),
-      ),
 
-      Positioned(
-        left: 40.0,
-        bottom: 250.0,
-        height: 60,
-        width: 330,
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Screen4()),
-            );
-            setState(() {
-              hasbeenPressed = !hasbeenPressed;
-            });
-          },
-          child: Text(
-            "Ratata",
+        Positioned(
+          left: 40.0,
+          bottom: 250.0,
+          height: 60,
+          width: 330,
+          child: ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Screen4()),
+              );
+              setState(() {
+                hasbeenPressed = !hasbeenPressed;
+              });
+            },
+            child: Text(
+            widget.poke1.name,
             style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 35.0,
-              color: Colors.black,
+            fontWeight: FontWeight.bold,
+            fontSize: 35.0,
+            color: Colors.black,
             ),
           ),
         ),
@@ -122,7 +125,7 @@ class _Screen2State extends State<Screen2> {
             });
           },
           child: Text(
-            "Geodude",
+            widget.poke2.name,
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 35.0,
