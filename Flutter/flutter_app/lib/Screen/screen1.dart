@@ -1,9 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_app/models/pokemon.dart';
 import 'package:flutter_app/Screen/screen2.dart';
+import 'package:flutter_app/utilities/network_helper.dart';
+import 'dart:math';
 
 class Screen1 extends StatelessWidget {
+  Random random = new Random();
+  Pokemon_Obj pokemon = new Pokemon_Obj();
+
+  Future FetchPoke() async {
+    var requisicao = NetworkHelper(
+        url: "https://pokeapi.co/api/v2/pokemon-form/${random.nextInt(900)}");
+    pokemon = Pokemon_Obj.fromJson(await requisicao.getData());
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,10 +39,11 @@ class Screen1 extends StatelessWidget {
               bottom: 150.0,
               width: 200.0,
               child: new ElevatedButton(
-                onPressed: () {
+                onPressed: () async {
+                  await FetchPoke();
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Screen2()),
+                    MaterialPageRoute(builder: (context) => Screen2(poke: pokemon)),
                   );
                 },
                 child: Text(
@@ -44,10 +57,9 @@ class Screen1 extends StatelessWidget {
                 bottom: 50.0,
                 width: 200.0,
                 child: new ElevatedButton(
-                    onPressed: (){
+                    onPressed: () {
                       SystemNavigator.pop();
                     },
-
                     child: Text(
                       "Exit !",
                       style:
