@@ -1,0 +1,122 @@
+Aula 1-
+ 
+Engenharia de Sofware
+
+Desenvolvimento de Software: Engenharia de Software + Programacao + Banco de dados
+
+	- Cultura da empresa
+	- Categoria de software
+
+
+Engenharia de software eh um conceito antigo que veio para melhorar a parte de processamento de dados
+
+
+Passado: programador solitario		Atual: Equipe TI multidisciplinar, auto-organizada e comprometida
+
+
+* Hoje procuram desenvolvedores Fullstack (conhecer desde o back ate o front)
+
+
+Questoes que sao abordados e tentam minimizar Engenharia de Software:
+
+Pq leva tanto tempo?
+
+Pq os cutos de desenvolvimento sao tao altos?
+
+Pq nao podemos achar todos os erros antes de entregar o software aos clientes?
+
+Pq gastamos tanto tempo e esforco mantendo programas existentes?
+
+
+Software eh desenvolvido e nao fabricado, ou seja eh gerado levando em consideracao as particularidades de cada projeto, oq acaba respondendo algumas das perguntas acima.
+
+Software nao se desgasta, mas apesar da tendencia de utilizacao de componentes, a maioria continua sendo construida sob encomenda.
+
+Software atualmente custa mais do q Hardware, justamente por ser feito sob medida para cada projeto.
+
+Projetos de softaware sao mudados constantemente, por isso eh praticamente impossivel estimar tempo q vai demorar e quanto vai custar o desenvolvimento. 
+
+Nao se esconde os erros, mas sao definidos onde e oq sera testado e sao feitos prioridades para teste de funcionamento.
+
+Muitas vezes softwares antigos continuam passando por manutencao principalmente devido a grandes empresas, bancos e afins, q tem um sistema mt grande rodando em cima de algo ja antigo, mas mudar seria mt trabalhoso.
+
+
+Software:
+
+Programas de computadores q quando executados fornecem as carac, funcoes e desempenho desejados  ===> Voltado mais para programacao
+
+Estrutura de dados q permitem aos programas manipular adequadamente a informacao ===> mais voltado para estrutura de dados e banco de dados
+
+Documentos q descrevem a operacao e o uso dos programas  ===> mais ligado a Engenharia de Software
+
+
+
+Software eh um conjunto de dados, arquivos de configuracao e documentacao necessarios para q o software funcione corretamente.
+ 
+
+Toda vez que uma mudanca eh implementada, aumentam as chances de aparecer erros.
+
+
+
+Tipos de Softwares:
+
+Software de Sistemas: 
+
+	Softwares utilizados por outros softwares.  Compiladores, SO, componentes
+
+Software de Aplicacao
+	
+	Softwares que tem como objetivo resolver um problema especifico de negocio.	Folha de pagamento, gestao de info
+
+Software de Tempo real
+	
+	Softwares de app, mas q monitoram, analisam e controlam eventos em tempo real.	Sistema do metro, sistema de aviacao
+
+Cientifico e de Engenharia
+
+	Antigamente so processavam numeros.	sistema de astronomia, analise automotiva de tensao a dinamica orbital do onivus espacial.
+	Atualmente sao apoiados por computadores, simulacao de sistemas e outras aplicacoes interativas.
+
+Software Embutido
+
+	residem dentro de outro produto, sistema ou memoria ROM. Controle de teclado forno microondas, gasolina do automovel
+
+Sofware para linha de produtos
+
+	antendem uma necessidade especifica para ser utilizado por varios usuarios diferentes.	Jogos, planilhas, editores de texto.
+
+Software Para Web
+
+	Para serem disponibilizados em browser.	E-commerce, e-learning
+
+Software para IA
+
+	algoritmos nao numericos para resolver problemas complexos q n sao passiveis de computacao ou analise direta.	Robotica, sistemas elspecialistas, sistema de reconhecimento de padrao, redes neurais.
+
+Computacao Ubiqua
+
+	permitem conectividade entre varios dispositivos atraves de diferentes tipos de redes atraves da computacao distribuida.	Acesso info pelo cel, TV digital
+
+Software Aberto
+
+	software de aplicacao, com codigo fonte aberto.	 SO, sistemas de banco de dados.
+
+
+
+Perguntas:
+
+oq sao softwares legados? R:Softwares q apesar de continuarem sendo utilizados, ja estao ultrapassados.
+
+qual a relacao de softwares legados com o desenvolvimento de software? R:Mts vezes os softwares novos tem q ter integracao com o softwares legado.
+
+quais sao os possiveis problemas de um software legados? R: Perder manutencao, ficar ultrapassado.
+
+
+
+Problemas: 
+
+	- Digitou um comando incorreto de uma letra, o aviao descaralhou.
+	- Codigo de uma letra para Cali eh o msm q Bogota
+
+
+

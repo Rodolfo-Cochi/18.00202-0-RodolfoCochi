@@ -1,0 +1,149 @@
+Aula 1 - 
+
+Redes de Computadores
+
+Introducao a Redes: 
+
+Protocolos de Redes
+Conhecimento de tecnologias de redes
+Conhecimento em servicos de redes
+Especificacao e implementacao de arquiteturas e topologias de redes
+Selecionar, especificar e configurar equipamentos que atendam as necessidades de um projeto em redes de computadores com enfoque em seguranca
+
+LAN - Local Area network
+
+Tipos de servidores: 
+	E-mail
+	WEB
+	Arquivo
+
+entre outros
+
+
+Tipos de Midia: 
+	Fios Metalicos
+	Fibras de vidro ou plastico (fibra optica)
+	Transmissao sem fio
+
+
+Topologia Fisica: Localizacao fisica de dispositivos intermediarios e a instalacao de cabos
+
+Topologia Logica: Dispositivos, portas e o esquema de enderecamento da rede
+
+Intranet: Corporacao apenas
+Extranet: Corporacao mas tbb colaboradores, clientes, suppliers
+Internet: Mundao nosso.
+
+DNS: traduz endereco p IP ou IP p endereco
+
+
+Rede Confiavel: 
+
+Tolerancia a falhas: Oferecer caminhos alternativos caso tenha algum problema.
+
+Escalabilidade: Ser passivel de crescimento, escolha dos esquipamentos, etc.
+
+Qualidade de Servico: Garantir prioridades para os servicos em questao, por exemplo voz contra web, voz tem prioridade.
+
+Seguranca na rede: senhas fortes e seguranca fisica.
+
+=============================================================================================================================================================================================================================
+
+Aula 2 - 
+
+Modelos e protocolos de redes
+
+
+Principios de cominicacao:
+	
+	Comunicacao entre Pessoas: Mensagem -> Sinal -> meio de trans -> Sinal -> Mensagem
+	Comunicacao entre Computadores: Mensagem -> Sinal -> meio de trans -> Sinal -> Mensagem
+
+Protocolos sao necessarios para comunicacao eficaz:
+	
+	Um emissor e um receptor indentificados
+	Lingua e gramatica comum
+	Velocidade e ritmo de transmissao
+	Regquisitos de confirmacao ou recepcao
+
+Protocolos das comunicacoes de rede tambem definem:
+	
+	Codificacao de mensagens
+	Opcoes de envio de mensagem 
+	Formatacao e Encapsulamento de Mensagens
+	Temporizacao de Mensagem
+	Tamanho da mensagem
+
+
+Pode ser feito uma analogia entre comunicacao de computadores e comunicacao entre cartas por exemplo.
+	
+
+Temporizacao:
+		
+	Metodo de Acesso: Saber quando comecar a enviar e como proceder se der merda
+	
+	Controle de fluxo: Evita sobrecarregar o destino, negociando a temporizacao correta
+
+	Limite de Tempo da Resposta: Quanto aguardar respostas e q acao tomar se der merda
+
+
+Opcoes de entrega de mensagem: 
+
+	Mensagem unicast: Entrega um para um
+	
+	Mensagem multicast: Entrega de um para muitos
+
+	Mensagem de broadcast: Entrega de um para todos
+
+
+Protocolos de Redes sao analisados utilizando o modelo de camadas.
+
+
+Funcoes do protocolo de rede:
+		
+	Enderecamento
+	Confiabilidade
+	Controle de fluxo
+	Sequenciamento
+	Deteccao de erros
+	Interface de aplicacao	
+
+Existe uma interacao entre os protocolos para que seja possivel receber e enviar dados.
+
+
+
+Protocolo TCP/IP apesar de ser o primeiro ainda eh o utilizado na pratica.
+
+
+TCP/IP - Dividido em 4 camadas
+	
+	Aplicacao - Name system (DNS), Host config, Email, File transfer, Web and Web service
+	Transporte - Connection-Oriented (TCP), Connectionless (UDP)
+	Internet - Internet Protocol, Messaging, Routing Protocols
+	Acesso a rede - Addres Resolution, Data Link Protocols	
+
+
+Modelo OSI - Dividido em 7 camadas
+
+	Aplicacao - Progrmas de comunicacao - Aplicacoes do usuario, APIs, servicos de rede
+	Apresentacaop - Codificacao - Compressao, formatacao e representacao dos dados
+	Sessao - Controle do dialogo - Sincronismo de dialogo, gerenciamento de sessao
+	Transporte - Monitoramento da transmissao do usuario - Controle da QoS global, controle de fluxo, recuperacao de erro, multiplexacao
+	Rede - Enderecamento e selecao de rota na rede - Enderecamento e rotemanto
+	Enlace - Pedido de retrasmissao na rede - Estabelecimento do enlace de daddos, deteccao de erros, delimitacao de quadros
+	Fisica - Interface de rede do assinante: fisica, eletrica e logica - Acessoao meio de transmissao, interface fisica e eletrica, ativacao da conexao
+
+
+
+Encapsulamento de dados: 
+	
+	Cada camada recebe dados da camada superior
+	Acrescenta um cabecalho de info para criar uma nova unidade de dados
+	Passa a nova unidade de dados p camada de baixo
+
+	Envio - Encapsulamento
+	Recebimento - Desencapsulamento
+
+
+	Os dados assumem o formato de PDU (Protocol Data Unit) em cada camada no processo de encapsulamento
+

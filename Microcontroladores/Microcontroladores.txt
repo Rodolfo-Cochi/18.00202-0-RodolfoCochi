@@ -1,4 +1,34 @@
 Aula 1 - 
 
-Microcontroladores
+Microcontroladores:
+
+	- Eh um circuito integrado
+	- Possui diversos perifericos: memorias, conversores, debugs, etc...
+
+Utilizados nas mais diversas situacoes, de avioes ate eletrodomesticos.
+
+
+Arquiteturas: 
+
+	Von Neumann: Compartilha a msm memoria para o programa e dado
+	Harvard: Possui diferentes memorias para programa e dado
+
+
+	RISC:
+		Vantagens: Pipeline, execucao rapida de cada ciclo
+		Desvantagens: Numero de instrucoes reduzida, codigo mais complexo
+
+	CISC:
+		Vantagens: Grande numero de instrucoes, reduz o codigo
+		Desvantagens:  Hardware eh complexo, portabilidade mais dificil\
+
+
+
+Perifericos: 
+	UART: Comunicacao assincrona
+	TIMER: temporizador
+	GPIO: controle dos pinos de forma digital
+	A/D: conversor analogico digital
+	PWM: modulacao por largura de pulsos
+	SPI/I2C: comunicacao seriais com outros chips
 

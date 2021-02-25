@@ -1,0 +1,54 @@
+Aula 1- 
+
+Banco de dados
+
+Foco em se tornar um DBA.
+
+
+Arquivos x Banco de dados:
+	
+
+Arquivos: 
+
+	Recursos de Computacao para armazenamento de info
+	Disponiveis para programas de computacao que os processam
+	Tecnologia de armazenamento persistente
+	Permanecem disponiveis apos a execucao de um programa de computacao
+	Mantidos pelos SO
+
+Nao usar banco de dados pode gerar falta de organizacao nos projetos, ligado diretamente ao tamanho do projeto em questao.
+
+Problemas com arquivos normais, geram muitas dificuldades para resolucao, por exemplo ter q inserir ou retirar dados na mao, caso aja problema nas atualizacoes de determinados arquivos.
+
+Problema de concorrencia teria q ser tratado na propria aplicacao, para nao gerar problemas nos arquivos
+
+Nao custa nada 
+
+
+Banco de Dados: Oferece varias facilidades para gerenciamento de dados
+
+	Conjunto de arquivos ====> Banco de dados
+	Sistema gerenciador banco de dados (Modulos q fazem parte do gerenciador) ====> Visoes dos dados, problemas com concorrencia, controle de transacoes(se algo deu errado) pode dar roll back. 
+	A juncao eh chamado Sistema de Banco de dados
+	Algumas aplicacoes q utilizam dados em tempo real com tempo muito critico, as vezes nao usam Sistemas de Banco de dados, ja que consomem tempo
+		
+Alto custo pelo servico
+
+Projeto de Banco de dados:
+
+Especificacao e analise de requisitos
+Projeto conceitual
+Projeto logico
+Projeto fisico	
+
+
+Catalogos:
+
+	Definicoes do Banco de dados	
+
+
+Abstracao de dados (Isolamento dos dados): A estrutura de banco de dados n eh feita no programa, mas sim no proprio banco de dados
+
+
+
+=============================================================================================================================================================================================================================
