@@ -1,0 +1,5 @@
+Linguagens ll
+
+. -> 10
+# -> 100
+o resto conta normal

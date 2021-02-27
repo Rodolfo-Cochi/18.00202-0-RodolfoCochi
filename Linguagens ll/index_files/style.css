@@ -1,0 +1,25 @@
+
+/*foda se*/
+:root{
+    --azulgmt: #004181;
+}
+
+p#descricao{
+    color: var(--azulgmt);
+}
+
+#titulo{
+    color: blanchedalmond;
+}
+h1{
+    color:azure;
+}
+p{
+    color:aqua;
+}
+strong{
+    color: bisque;
+}
+.curso,.novo{
+    background-color: aqua;
+}

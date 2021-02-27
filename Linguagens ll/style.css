@@ -1,0 +1,36 @@
+/*foda se*/
+:root{
+    --azulgmt: #004181;
+}
+
+p#descricao{
+    color: var(--azulgmt);
+}
+
+#titulo{
+    color: blanchedalmond;
+}
+h1{
+    color:azure;
+}
+p{
+    color:black;
+}
+strong{
+    color: bisque;
+}
+.curso,.novo, .cordenadores{
+    background-color:bisque;
+}
+
+.novo{
+    color:#004181;
+}
+
+.cordenadores{
+    color:#004181;
+}
+
+article p {
+    padding: 12px;
+}
