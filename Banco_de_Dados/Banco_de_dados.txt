@@ -28,7 +28,7 @@ Nao custa nada
 Banco de Dados: Oferece varias facilidades para gerenciamento de dados
 
 	Conjunto de arquivos ====> Banco de dados
-	Sistema gerenciador banco de dados (Modulos q fazem parte do gerenciador) ====> Visoes dos dados, problemas com concorrencia, controle de transacoes(se algo deu errado) pode dar roll back. 
+	Sistema gerenciador banco de dados (Modulos q fazem parte do gerenciador) ====> Visoes dos dados, problemas com concorrencia, controle de transacoes (Programas que acessam o BD)(se algo deu errado) pode dar roll back. 
 	A juncao eh chamado Sistema de Banco de dados
 	Algumas aplicacoes q utilizam dados em tempo real com tempo muito critico, as vezes nao usam Sistemas de Banco de dados, ja que consomem tempo
 		
@@ -52,3 +52,85 @@ Abstracao de dados (Isolamento dos dados): A estrutura de banco de dados n eh fe
 
 
 =============================================================================================================================================================================================================================
+
+
+Aula 2 - 
+
+Abstracao de dados - Trabalhar com modelagem de dados
+
+
+Modelagem Conceitual (nivel mais alto) - Mais proximo da forma pela qual os usuarios percebem os dados, baseado nos requisitos da aplicacao
+
+Nivel Logico - Arquitetura do banco de dados em questao, tabelas, grafos etc ...
+
+Nivel Fisico (Nivel mais baixo) - Modelos q levam em consideracao como os dados sao armazenados no meio fisico
+
+
+Modelo entidade-Relacionamento:
+
+	Entidades: Objetos do mundo real
+	Atributos
+	Relacionamentos
+
+
+Instancia do banco de dados:
+	
+	Estado Atual do banco de dados
+
+
+Transacao atomica: Ou ela faz tudo q deveria ser feito ou nao faz nada
+
+
+Sistemas de Bancos de dados eh muito complexo, necessidade de mt poder computacional 
+
+
+	
+Modelo de Dados Relacional:
+
+Baseado num conjunto de relacoes, cada linha representa uma colecao de valores relacionados, os nomes da tabela e de coluna ajudam a interpretar o significado
+
+Funciona de como uma tabela.
+
+
+Terminologia Formal:
+	
+	Linha da tabela eh chamado: Tupla
+	Coluna da Tabela : Atributo 
+	Tabela: Relacao
+
+Dados q estao na mesma coluna compoe um dominio
+
+
+	Dominio: Conjunto de valores atomicos
+	Atomico: Cada valor eh indivisivel
+	Dominio: eh especificado por um tipo de dado
+
+
+Esquema Relacional R:
+
+*Cada tabela tem um esquema
+
+	Esquema: nome da relacao + lista de atributos
+
+Cada Atributo pertence a um Dominio
+
+	Grau ou Aridade de uma relacao: Qnt de atributos da relacao
+
+Relacao ou Estado de relacao: Conjunto de n tuplas da relacao
+
+O modelo relacional permite q um determinado valor seja desconhecido (NULL)
+NULL - sao valores nulos, ou nao informados
+
+
+Definicao a luz da teoria dos conjuntos:
+
+	Relacao eh um subconjunto do produto cartesiano dos dominios da tabela.
+
+
+Cardinalidade (|Dominio|):  qnt de elementos q agnt tem no dominio do atributo
+
+	Total de tuplas = multiplicacao das Cardinalidades
+
+
+
+No modelo relacional os valores dos atributos sao atomicos, ou seja nao podem ser dividos, de forma q nao podem ser subdivididos
