@@ -117,6 +117,27 @@ Problemas:
 
 	- Digitou um comando incorreto de uma letra, o aviao descaralhou.
 	- Codigo de uma letra para Cali eh o msm q Bogota
+	
+	R: - Padronizar o banco de dados
+	   - Confirmacao do destino	
 
 
+=============================================================================================================================================================================================================================
 
+Aula 2 -
+
+
+Sommerville - 
+
+Engenharia: Engenheiros fazem as coisas funcionarem, aplicam teorias, ferramentas e metodos onde for apropriado ou criam se necessario.
+
+Todos os aspectos da producao de software: Gerenciamento de projeto de software e o desenvolvimento de ferramentas, metodos que apoiem a producao de software.
+
+
+Engenharia de Software:
+
+	Qualodade: Eh uma camada q suporta a engenharia de sofware, tendo como foco um sofware total com qualidade
+	Processo: Eh um conjunto de atividades e resiltados associados q geram um produto de software. Ha quatro atividades de processo fundamentais comins a todos os processos de software
+	Metodos: Sao abordagens para o desenvolvimento de software q incluem: modelos, notacoes, regras, recomendacoes e diretrizes, Eh a camada q fornece a tecnica de como fazer para construir sofwares, ou seja a maneira de conduzir um processo
+	Ferramentas: Eh a camada q proporciona apoio automatizado aos processos e metodos, como por exemplo as ferramentas CASE
+ 
