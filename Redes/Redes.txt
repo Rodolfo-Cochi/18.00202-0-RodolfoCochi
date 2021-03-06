@@ -147,3 +147,203 @@ Encapsulamento de dados:
 
 	Os dados assumem o formato de PDU (Protocol Data Unit) em cada camada no processo de encapsulamento
 
+==================================================================================================================================================================================
+
+Aula 3 - 
+
+Meios de tranmissao:
+
+Modulacao PCM - Digitalizacao de sinais analogicos (Canais PCM)
+
+	Teorema de Nyquist: C = 2.W.log2L
+
+Capacidade do Canal - Quanto se transmite de dados numa faixa de frequencia
+
+	Banda Base: toda a capacidade do meio para transmitir a informacao em um unico canal, geralmente usa sinalizacao digital (Ethernet)
+	Banda Larga: Utiliza a capacidade do meio para transmitir diferentes frequencias e multiplos canais (TV a cabo)
+
+Multiplaxacao: 
+	
+	- FDM: Banda Larga
+	- TDM: Banda Base
+
+Camada Fisica:
+
+	- Conexao Fisica com uma rede local antes de qualquer comunicacao de rede
+	- Pode ser feita com ou sem fio dependendo da config de rede
+	- Se aplica geralmente em escritorios ou casas
+	- As placas de interface de rede (NICs) conectam um dispositivo a internet
+	- Um equipamento pode ter 1 ou mais NICs
+	- Nem todas as conexoes fisicas oferecem o mesmo nivel de desempenho
+
+
+
+Taxas de transmissao de dados dependem entre outros fatores:
+	
+	- Largura de banda eh a capacidade na qual um meio pode transportar dados.
+	- A largura de banda digital mede a quantidade de dados q pode fluir de um lugar para outro em um determinado periodo de tempo.
+	- Propriedades da midia fisica, tecnologias atuais e as leis da fisica tem funcao importante na determinacao da largunra de banda disponivel.
+
+Latencia:
+	- quantidade de tempo, incluindo atrasos
+
+Taxa de tranferencia:
+	- Medida da transferencia de bits atraves do meio fisico durante um determinado periodo
+
+Throughput:
+	- Medida de dados uteis transferidos em um determinado periodo
+
+As configurações físicas são especificadas, empregando a seguinte notação:
+
+ 	<taxa de transmissão em Mbps><método de sinalização><comprimento máximo do segmento em centenas de metros>
+
+Meios de transmissao:
+	- Cabos de Par trancado (UTP e STP)
+	- Cabos Coaxiais (thickNet e thinNet)
+	- Cabos de fibra optica (monomodo e multimodo)
+
+Cabo de par trancado UTP:
+	
+	O cabeamento UTP está em conformidade com os padrões estabelecidos pela TIA/EIA. 
+	• A EIA/TIA-568 estipula os padrões de cabeamento para instalações de LAN
+
+	Cabo Cat 3 
+	• Usado para comunicação por voz
+	• Usado com mais frequência para linhas telefônicas
+
+	Cabo Cat 5 e 5e
+	• Usado para transmissão de dados
+	• A Cat5 é compatível com 100 Mb/s
+	• A Cat5e permite 1.000 Mb/s
+
+ 	Cabo Cat 6
+	• Usado para transmissão de dados
+	• Um separador é adicionado entre cada par de fios
+	• Compatível com 1.000 Mb/s a 10 Gb/s
+
+
+	Vantagens:
+
+	- Usa o efeito de cancelamento de ruído, produzido pelos pares de fios trançados para limitar a degradação do sinal causada por interferência eletromagnética e por interferência da frequência de rádio;
+
+	- Para reduzir ainda mais a diafonia entre os pares no cabo UTP, o número de tranças nos pares de fios varia;
+
+ 	- Comunicação Half-duplex e full-duplex;
+
+	- Alto desempenho;
+
+	- Baixo custo;
+
+	- Fácil instalação.
+
+	Desvantagens:
+
+	- É mais propenso ao ruído elétrico e à interferência do que outros tipos de meios de rede.
+
+Cabo Coaxial:
+	
+	Tipos: padrões radio grade (RG), que definem o diâmetro e tipo do condutor central.
+		- RG 6: usados em CATV e sistemas de segurança com B = 500 MHz, 75 Ω, e distância de 153m;
+
+		- RG 8: usados em redes locais: 10Base2 e 10Base5
+	
+	Vantagens:
+	- Este cabo é mais resistente a interferência e atenuação que os cabos de pares trançados;
+	- Banda passante de 1 GHz.
+
+	Desvantagem:
+	- Não é flexível
+	- Topologia em barramento
+	- 10 Mbps.
+
+
+Fibra Optica:
+	
+	Vantagens:
+	- Capacidade de transmissão da informação (1GHz/100m);
+	- Baixa atenuação e distância maior;
+	- Imunidade eletromagnética (não conduz eletricidade);
+	- Menor peso (pesa de 20 à 50 % menos com relação ao par trançado);
+	- Menor tamanho (15% menor o tamanho comparado com o par trançado);
+	- Segurança da informação.
+
+	Desvantagem:
+	- Custo.
+
+
+Tipos de Fibra Optica:
+	
+	- Multimodo índice degrau: Pequenas distancias
+
+	Leds;
+	Propagação da luz em zigue-zague;
+	Índices de refração: núcleo (50-400um) e casca (125- 600um);
+	Menor B=30MHz/km;
+	Atenuação de 5dB/km;
+	Grande abertura numérica;
+	Usado em instrumentação e comunicações em automóveis.
+
+	Multimodo índice gradual: Utilizada em redes
+
+	Leds;
+	Propagação da luz em zigue-zague;
+	Tamanhos de índice de refração (62.5/125um)
+	Menor atenuação (1 dB/km);
+	Maior B=1GHz/km);
+	Menor abertura numérica;
+	Distância de 2.000m;
+	Redes de computadores, sistemas de comunicação, rede em campus.
+
+	Monomodo: Cabos submarinos
+
+	Laser;
+	Propagação da luz em um único modo;
+	Tamanhos de índice de refração (10/125um);
+	Menor atenuação (0,2 dB/km);
+	Maior B=100 GHz/km);
+	Distância de 50 km sem repetidores;
+	Dispersão modal nula;
+	Backbones, Gigabit Ethernet, etc.
+
+Meio Fisico sem fio:
+
+Ele carrega sinais eletromagnéticos que representam dígitos binários usando
+frequências de rádio ou microondas. Isso fornece a melhor opção de mobilidade.
+Os números de conexão sem fio continuam aumentando.
+
+Algumas das limitacoes do wireless:
+
+	Area de Cobertura
+	Interferencia
+	Seguranca
+	As WLANs medias compartilhadas
+
+Requer os seguintes dispositivos:
+
+- Access Point (Ponto de acesso) Sem Fio
+- Adaptadores de NIC sem fio 
+
+Topologias:
+	
+	- Fisica: Como os equipamentos estao conectados, ligado a insfraestrutura.
+	
+	- Logica: Refere- se a como a rede transfere quadros de um no para o outro.
+
+Comunicacao half-duplex:
+	
+	Ambos os dispositivos podem transmitir e receber no meio físico, mas não podem fazer isso simultaneamente.
+
+	Usado nas topologias de barramento herdadas e com hubs Ethernet.
+
+	As WLANs também operam em half-duplex.
+
+Comunicacao full-duplex:
+	
+	Ambos os dispositivos podem transmitir e receber no meio ao mesmo tempo.
+
+	A camada de enlace de dados supõe que o meio físico está disponível para transmissão para ambos os nós a qualquer momento.
+
+	Os switches Ethernet operam no modo full-duplex por padrão, mas podem operar em half-duplex se conectados a um dispositivo como um hub Ethernet.
+
+
+Quadro de ethernet: Importante para divisao da informacao e check de dados, para se algo deu errado, requisitar o reenvio do pacote.
