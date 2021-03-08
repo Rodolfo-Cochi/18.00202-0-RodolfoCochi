@@ -83,7 +83,6 @@ Transacao atomica: Ou ela faz tudo q deveria ser feito ou nao faz nada
 
 Sistemas de Bancos de dados eh muito complexo, necessidade de mt poder computacional 
 
-
 	
 Modelo de Dados Relacional:
 
@@ -133,4 +132,55 @@ Cardinalidade (|Dominio|):  qnt de elementos q agnt tem no dominio do atributo
 
 
 
-No modelo relacional os valores dos atributos sao atomicos, ou seja nao podem ser dividos, de forma q nao podem ser subdivididos
+No modelo relacional os valores dos atributos sao atomicos, ou seja nao podem ser dividos, de forma q nao podem ser subdivididos.
+
+
+
+=============================================================================================================================================================================
+
+Aula 3 - 
+
+Restricoes de Chaves - duas tuplas n podem ter a mesma combinacao de valores para todos os seus atributos
+
+Superchave - Pode ser um ou mais atributos, desde q estes sejam diferentes dentre os outros valores da tabela
+
+	- Qualquer coluna ligada uma Superchave, eh tb uma Superchave
+	
+Superchave minima - Eh uma super chave q caso perca um atributo, nao pode mais ser chamada de superchave.
+
+Chave - Mesma coisa q Superchave minima
+
+Chave Candidata - Uma das possibilidades de chave q existem na tabela.
+
+Chave primaria - Chave candidata escolhida para ser a chave da tabela 
+
+Chave Unica (alternada) - As candidatas nao escolhidas para serem a Chave primaria
+
+
+Estados do Banco de Dados Relacional:
+
+	Estado Valido: Satisfaz todas as restricoes no conjunto de restricoes de integridade RI.
+	Estado Invalido: Nao Satisfaz todas as restricoes no conjunto
+
+Restricoes de Integridade:
+	
+Restricao de integridade de entidade: Nenhum valor de chave primaria pode ser NULL
+
+Restricao de integridade Referencial: uma tupla q referencia outra tabela, esta outra tabela precisa conter essa mesma tupla
+
+
+Chave estrangeira: Ocorre quando a chave primaria de uma tabela tb esta associada a outra tabela, pode ter valor nulo.
+
+
+Restricoes Semanticas: Nao tem ligacao direta com o banco de dados
+
+Correspondem as regras de negocio
+
+Nao sao expressas nos esquemas do modelo de dados e, portanto, sao expressas e impostas por programas de aplicacao
+
+
+Operacoes de Mudanca de Estado: Inserir, Excluir e Alterar (Modificar)
+
+	- Restrict: rejeita a exclusao
+	- Cascade: Propaga a exclusao, excluindo tuplas que referenciam a que esta sendo excluida
+	- Set Null ou Set Default: Modificam os valores de atributo que referenciam a causa da violacao
