@@ -239,3 +239,56 @@ MODELO INCREMENTAL: "Dividir para conquistar". *Regra de ouro: entregar primeiro
 		- Para softwares que frequentemente alteram requisitos;
 		- Quando usuário necessita utilizar uma parte do produto antes do final de um projeto;
 		- Quando há prazo de entrega que não pode ser modificado.
+
+
+Exercicios: 
+
+1 -
+ - Cadastro de cliente
+ - Registro de ponto
+ - Consulta e gera relatorio
+
+2 
+ - Sim, Incremental e prototipacao.
+
+3 -
+
+ - Site de vendas
+ - Rede social
+ - Sistema de dashboard
+
+Dificil: 
+	- Sistema integrado de gestao
+	- Modulo de pouso do foguete
+
+4 - 
+
+a- Cascata
+b- Incremental
+c- Prototipagem + Incremental
+d- Incremental
+
+5 - 
+
+a- Definir prioridades para a implementacao, testar e entregar.
+b- Seria discutido a ordem de prioridade, e entregar os modulos de acordo com tal e aguardando as validacoes.
+
+
+6 - 
+
+a- Incremental
+
+
+
+MODELO RUP (Rational Unified Process): 
+
+	- O RUP é um produto de processo
+	- Desenvolve software iterativamente;
+	- Gerencia requisitos;
+	- Utiliza arquitetura baseada em componentes;
+	- Modela visualmente o software;
+	- Verifica continuamente a qualidade do software
+	- Controla mudanças de software;
+
+	
+	 
