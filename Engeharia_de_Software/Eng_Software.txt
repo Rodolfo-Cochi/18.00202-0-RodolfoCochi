@@ -136,8 +136,106 @@ Todos os aspectos da producao de software: Gerenciamento de projeto de software 
 
 Engenharia de Software:
 
-	Qualodade: Eh uma camada q suporta a engenharia de sofware, tendo como foco um sofware total com qualidade
+	Qualidade: Eh uma camada q suporta a engenharia de sofware, tendo como foco um sofware total com qualidade
 	Processo: Eh um conjunto de atividades e resiltados associados q geram um produto de software. Ha quatro atividades de processo fundamentais comins a todos os processos de software
 	Metodos: Sao abordagens para o desenvolvimento de software q incluem: modelos, notacoes, regras, recomendacoes e diretrizes, Eh a camada q fornece a tecnica de como fazer para construir sofwares, ou seja a maneira de conduzir um processo
 	Ferramentas: Eh a camada q proporciona apoio automatizado aos processos e metodos, como por exemplo as ferramentas CASE
+
+
+====================================================================================================================================================================================================================================================================
+
+Aula 3 - 
+
+Modelos de processo tradicionais: Como sera desenvolvido o software
+
+	- Cascata
+	- Incremental
+	- Espiral 
+	- RAD
  
+Escolhido na base de :
+
+	- Natureza do projeto e app (tipo de software)
+	- Metodos e ferramentas a serem utilizados
+	- Controles e nos produtos intermediarios e finais a serem entregues
+
+
+MODELO SEQUENCIAL LINEAR (Cascata):
+
+Fase 1: Engenharia de Sistemas: Envolve cole de requisitos em nivel do sistema, com uma pequena quantidade de projeto e analise de alto nivel;
+
+	Defini-se: 
+
+ 		- escopo do sistema; 
+ 		- avaliação do sistema atual em uso, se existir; 
+ 		- definição de metas e objetivos; 
+ 		- viabilidade de desenvolvimento do sistema; 
+ 		- os custos e prazos; 
+ 		- escolha da metodologia de desenvolvimento; 
+ 		- elementos de software e hardware que serão necessários.
+
+Fase 2: Analise: O processo de coleta dos requisitos eh inensificado e concentrado especificamente no software
+
+	Realiza-se:
+		
+		- modelagem independente de tecnologias e ferramentas;
+		- definição de informações e funções do sistema;
+		- especificação do critério de aceitação
+
+Fase 3 : Projeto: Traduz os requisitos para uma representacao de sofware, q pode ser avaliada quanto a qualidade, antes que a codificacao tenha inicio.
+
+	Envolve:
+		
+		- definição da arquitetura de software;
+		- estrutura de dados;
+		- detalhamento dos procedimentos;
+		- Representações da interface.
+
+Fase 4: Codificacao: Traducao do projeto para uma linguagem de programacao.
+
+Fase 5:  Testes: Realiza os processos de testes focando na logica interna e externa do sistema e se ta funcionando direito, de acordo com oq foi pedido.
+
+	
+Problemas no sequencial Linear:
+	
+	- Os projetos nem sempre seguem o fluxo sequencial que o modelo propõe. Algumas iterações ocorrem trazendo problemas;
+	- É difícil acomodar incertezas do projeto no seu início;
+	- O produto somente é visível no final de todo o ciclo;
+	- Não prevê a utilização de pacotes pré-existentes.	
+
+Aplicacoes do modelo sequencial Linear:
+
+	- Projetos com requisitos bem compreendidos;
+	- Projetos com processos pequenos que geram poucas chances de falhas nos requisitos, para que não seja necessário retornar ao início sempre que houver uma falhas. 
+
+
+
+MODELO PROTOTIPACAO: Parecido com o modelo sequencial porem, com protipos para o cliente, antes de realmente fazer o projeto final.
+
+	Usa- se geralmente:
+
+		- Quando não há identificação dos requisitos de entradas, processamento ou saída;
+		- Quando o desenvolvedor está inseguro da eficiência do algoritmo, da interação humanocomputador ou da adaptabilidade com outros sistemas.
+
+	Problemas:
+		
+		- O cliente acha que protótipo é produto;
+		- O projetista incorpora soluções inadequadas;
+		- A administração do ciclo de prototipação pode ser complicada
+
+MODELO INCREMENTAL: "Dividir para conquistar". *Regra de ouro: entregar primeiro oq agrega mais valor de negocio.
+	
+	Caracteristicas:
+			
+		- Divide o desenvolvimento de software em incrementos (que são como módulos do sistema) que “independem” uns dos outros;
+		- Combina elementos do modelo sequencial linear (cascata) com a filosofia iterativa do modelo de prototipação;
+		- Cada sequência linear produz um incremento do software. O processo se repete até que um produto completo seja produzido;
+		- O incremento inicial é frequentemente chamado de núcleo de produto. Isto quer dizer que os requisitos básicos são satisfeitos.
+
+
+	Geralmente utilizado quando: 
+
+		- Para softwares nos quais as funções possam ser divididas em módulos;
+		- Para softwares que frequentemente alteram requisitos;
+		- Quando usuário necessita utilizar uma parte do produto antes do final de um projeto;
+		- Quando há prazo de entrega que não pode ser modificado.
