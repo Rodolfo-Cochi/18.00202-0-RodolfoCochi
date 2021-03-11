@@ -365,7 +365,7 @@ O endereco IPv4 eh hierarquico:
 	
 	- Ele eh composto de uma parte de rede e uma parte de host
 
-Todos os dispositivos namesma rede terao a parte identica da rede
+Todos os dispositivos na mesma rede terao a parte identica da rede
 A mascara de sub-rede ajuda os dispositivos a identificar a parte da rede e a parte de host.
 
 192.168.10.10
