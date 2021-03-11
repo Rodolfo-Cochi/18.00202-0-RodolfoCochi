@@ -347,3 +347,103 @@ Comunicacao full-duplex:
 
 
 Quadro de ethernet: Importante para divisao da informacao e check de dados, para se algo deu errado, requisitar o reenvio do pacote.
+
+
+
+===========================================================================================================================================================================================
+
+Aula 4 - 
+
+Enderecamento de rede  
+
+Deafult Gateway - Porta de comunicacao com a rede externa (Porta do roteador)
+
+
+Endereco de Rede eh dado por IP AND Mascara de Rede.
+
+O endereco IPv4 eh hierarquico:
+	
+	- Ele eh composto de uma parte de rede e uma parte de host
+
+Todos os dispositivos namesma rede terao a parte identica da rede
+A mascara de sub-rede ajuda os dispositivos a identificar a parte da rede e a parte de host.
+
+192.168.10.10
+
+192.168.10 -> rede 
+10 -> Host
+
+
+Tipos de enderecos na rede 192.168.10.0/24
+	
+	- Endereco de rede -  a parte de host eh toda preenchida com 0s (.00000000)
+	- Primeiro endereço de host – a parte de host tem todos os bits em 0 e termina com 1 (.00000001)
+	- Último endereço de host – a parte de host tem todos os bits em 1 e termina com um 0 (.11111110)
+	- Endereço de broadcast – porção de host é toda preenchida com 1s (.11111111)
+
+
+Multicast - um para um grupo seleto:
+	
+	- Enderecos de 224.0.0.0 a 239.255.255.255 reservados para multicast
+	- os protocolos de roteamento usam a tranmissao multicast para trocar informacoes de roteamento
+
+Unicast - comunicacao um para um:
+	
+	- Use o endereco de destino do dispositivo como o endereco de destino
+
+Broadcast - um para todos:
+	
+	- Mensagem enviada a todos da LAN
+	- O endereco IPv4 de destino so tem numero um na parte de host.
+
+Enderecos particulares: 
+	
+	- Nao roteaveis
+	- Apresentados em meados da decada de 90 devido a reducao de enderecos IPv4
+	- Usados somente em redes internas
+	- Devem ser convertidos em um IPv4 publico para serem roteados
+	- Definido pelo RFC 1918
+
+Blocos de endereco privado:
+	
+	- 10.0.0.0 a 10.255.255.255
+	- 172.16.0.0 a 172.31.255.255
+	- 192.168.0.0 a 192.168.255.255
+
+O endereco de classe A 127 nao pode ser usado e eh reservado para fincoes de loopback e diagnostico (testa comunicacao entre processos na propria maquina)
+
+
+Ipv6 versus IPv4:
+	
+	Tem um maior espaço de endereço de 128 bits
+	340 undecilhões de endereços
+	Soluciona as limitações com IPv4
+	Adiciona aprimoramento como configuração automática de endereço.
+
+Necessidade do IPv6:
+	
+	Aumento considerável da população de Internet
+	Problemas com a NAT
+	Internet das Coisas
+
+Enderecamento IPv6:
+
+	128 bits de comprimento
+	Cada 4 bits é representado por um único dígito hexadecimal
+	Hexteto – termo não oficial que se refere a um segmento de 16 bits ou quatro valores hexadecimais.
+
+Regras IPv6:
+
+	1 - A primeira regra eh omitir os zeros a esquerda em qualquer hexteto
+	2 - Dois pontos duplo (::) pode substituir uma única sequência contígua de um ou mais segmentos de 16 bits (hextets) que consistem em todos os zeros
+
+Enderecamento IPv6 tipos:
+
+	- Unicast: Um unico endereco IPv6 de origem
+	- Multicast: Um endereço IPv6 multicast é usado para enviar um único pacote IPv6 para vários destinos.
+
+
+Unicast global: Esses são endereços roteáveis da Internet globalmente exclusivos.
+
+Link-local: Os endereços de link local são usados para comunicação com outros dispositivos no mesmo link local.
+Limitados a um único link.
