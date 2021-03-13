@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const { default: axios } = require('axios');
 
 const app = express();
 app.unsubscribe(bodyParser.json());
@@ -31,7 +32,19 @@ app.put('/Lembretes', (req,res) => {
         contador, texto
     }
     res.status(201).send(lembretes[contador]);
+
+    axios.post('http://localhost:10000/eventos', {
+    tipo: "LembreteCriado",
+    dados: { contador, texto } 
+    });
+    res.status(201).send(lembretes[ contador ]);
 });
+
+
+app.post('/eventos', (req, res) => {
+    console.log(req.body);
+    res.status(200).send({msg: 'ok'});
+})
 
 app.listen(4000, () => {
     console.log("Microsservico de lembretes executando na porta 4000")
