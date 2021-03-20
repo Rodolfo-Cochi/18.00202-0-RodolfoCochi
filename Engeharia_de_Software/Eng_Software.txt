@@ -291,4 +291,127 @@ MODELO RUP (Rational Unified Process):
 	- Controla mudanças de software;
 
 	
+================================================================================================================================================================================================================================================
+
+Aula 4 - 
+
+
+MODELO ESPIRAL: 
+
+	Caracteristicas: 
+		
+		- Engloba a natureza iterativa do modelo de Prototipação com aspectos sistemáticos e controlados do modelo Linear Sequencial (Cascata);
+		- Fornece potencial para o desenvolvimento rápido de versões incrementais do software;
+		- Durante as primeiras iterações, pode ser um modelo em papel ou protótipo;
+		- Durante as últimas iterações, são produzidas versões cada vez mais completas
+		- Cada loop representa uma fase do processo de software. Dessa forma o loop mais interno pode estar relacionado à viabilidade do sistema; o próximo loop, a definição de requisitos; o próximo ao projeto e assim por diante.
 	 
+	
+	Fases: 
+		
+		- Comunicação com o cliente: Tarefas necessárias para estabelecer efetiva comunicação entre o desenvolvedor e o cliente.
+		
+		- Planejamento: Definir recursos, prazps e putras infos relacionadas ao projeto.
+
+		- Analise de risco: Avaliar os riscos, tanto tecnicos como gerenciais.
+
+		- Engenharia: Tarefas necessarias para construir uma ou mais representacoes da aplicacao
+
+		- Construcao e Liberacao: Taredas para construir, testar, instalar e fornecer o suporte ao usuario.
+
+		- Avaliacao pelo Cliente: Obter o feedback do cliente com base na avaliacao do software durante a fase de engenharia e implementado na fase de construcao e liberacao.
+		
+		
+Utilizar quando:
+	
+	- Softwares de grande porte
+	- Softwares q possuem riscos no seu desenvolvimento.
+
+Problemas: 
+	
+	- Pode ser dificil convencer o clente que a abordagem "evolutiva" eh contrololavel;
+
+	- Exige grande experiencia na avaliacao de riscos e depende dessa competencia para obter sucesso;
+
+
+
+MODELO RAD:
+
+	Caracteristicas:
+
+		- É um modelo de processo de desenvolvimento de software incremental que enfatiza um ciclo de desenvolvimento extremamente curto (em média de 60 a 90 dias).
+
+		- É uma adaptação “de alta velocidade” do modelo sequencial linear, mas com utilização de componentes
+
+	Fases: 
+	
+	- Comunicacao: Tem como objetivo entender os problemas de negócio e as características de informação que o software precisa acomodar.
+
+	- Planejamento: Tem como objetivo planejar como várias equipes de software podem trabalhar em paralelo em diferentes funções do sistema.
+
+	- Modelagem: 
+		
+		- Negocios: 
+			
+			- Que informação dirige o processo de negócio?
+			
+			- Que informação é gerada?
+	
+			- Quem a gera?
+
+			- Para onde vai a informação?
+
+			- Quem a processa?
+
+		- Dados: 
+			
+			- O fluxo de informação definido na fase anterior é refinado em um conjunto de objetos de dados, que são necessários para suportar o negócio. São identificados os atributos de cada objeto e o relacionamento entre eles. 
+			
+		- Processo:
+
+			- Os objetos de dados definidos na fase de modelagem de dados são transformados para se obter o fluxo de informação necessário para implementar uma função do negócio.
+
+		- Construcao: 
+	
+			- reutiliza ferramentas de programacao ja disponiveis, ao inves de fazer tudo do zero.
+
+		- Implantacao: 
+		
+			- Integrar e implantar o sistema.
+
+
+Utilizar quando: 	
+
+	- As restrições de tempo impostas devem ter um mensurável (em média de 60-90 dias)
+	
+	- Se a aplicação de software pode ser modularizada de forma que cada função principal possa ser completada em menos de 3 meses;
+
+	- Cada função principal pode ser tratada por uma equipe distinta e depois integrada para formar um todo.
+
+Problemas: 
+
+	- Para projetos grandes, mas mensuráveis, o RAD exige recursos humanos suficientes para criar um número adequado de equipes;
+	
+	- Exige comprometimento da equipe de desenvolvimento e clientes com as atividades continuamente rápidas;
+
+	- Se o sistema não puder ser adequadamente modularizado, a construção dos componentes pode ser problemática;
+
+	- Se for treta demais, nao compensa.
+
+
+
+
+DESENVOLVIMENTO AGIL
+
+	- Manifesto agil:
+			
+		- Interecao entre pessoas mais que processos e ferramentas.
+		- Software em funcionamento mais que documentocao abrangente
+		- Colaboracao com o cliente mais que negociacao de contratos
+		- Responder a mudancas mais que seguir um plano 
+
+	
+	- Desenvolver software valorizando adaptabilidade, transparencia, simplicidade e unidade
+	- Valores ageis sao estabelecidos um conjunto de principios
+	- Praticas Ageis: Conjunto de atividades para implementar os principios e valores ageis
+

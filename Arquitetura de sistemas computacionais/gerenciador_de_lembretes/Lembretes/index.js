@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const { default: axios } = require('axios');
 
 const app = express();
-app.unsubscribe(bodyParser.json());
+app.use(bodyParser.json());
 
 const lembretes = {};
 contador = 0;
@@ -13,7 +13,7 @@ app.get('/Lembretes', (req, res) => {
     res.send(lembretes);
 });
 
-app.put('/Lembretes', (req,res) => {
+app.put('/Lembretes', async (req,res) => {
 
     //{texto: "Fazer cafe"}
 
@@ -33,7 +33,7 @@ app.put('/Lembretes', (req,res) => {
     }
     res.status(201).send(lembretes[contador]);
 
-    axios.post('http://localhost:10000/eventos', {
+    await axios.post('http://localhost:10000/eventos', {
     tipo: "LembreteCriado",
     dados: { contador, texto } 
     });
